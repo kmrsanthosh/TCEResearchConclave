@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="flex flex-col w-full md:flex-row">
       {/* Left Section */}
-      <div className="flex flex-col w-[50%] px-20 py-5 text-justify space-y-5 border border-red-500">
+      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5 border border-red-500">
         <h1 className="font-medium text-xl text-primary-accent">About TCE</h1>
         <p className="text-neutral-black">
           Thiagarajar College of Engineering (TCE), Madurai, Tamilnadu
@@ -24,7 +24,7 @@ const About = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-col w-[50%] px-20 py-5 text-justify space-y-5 border border-red-500">
+      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5 border border-red-500">
         <h1 className="font-medium text-xl text-primary-accent">
           About The Conclave
         </h1>
