@@ -10,9 +10,6 @@
 }
 
 @layer base {
-  body {
-    @apply font-inter text-neutral-black;
-  }
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -72,7 +69,10 @@
   * {
     @apply border-border;
   }
-  body {
+  /* body {
     @apply bg-background text-foreground;
+  } */
+  body {
+    @apply font-inter text-neutral-black;
   }
 }
