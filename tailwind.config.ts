@@ -9,11 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          accent: "#830000",
+        },
+        "neutral-black": "#23263B",
       },
       maxWidth: {
-        "10xl": "1440px",
+        "10xl": "1980px",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
