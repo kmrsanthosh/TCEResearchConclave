@@ -47,11 +47,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import {
-  CalendarDateRangeIcon,
-  MapPinIcon,
-  MapIcon,
-} from "@heroicons/react/24/outline";
+import { CalendarDateRangeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
 interface TimeLeft {
