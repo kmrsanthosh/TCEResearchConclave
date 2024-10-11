@@ -29,8 +29,8 @@ const About = () => {
           About The Conclave
         </h1>
         <p>
-          The Research Conclave 2025, themed &quotAdvancing towards a Resilient
-          Future,&quot convenes visionary leaders, innovators, and scholars to
+          The Research Conclave 2025, themed &quot;Advancing towards a Resilient
+          Future,&quot; convenes visionary leaders, innovators, and scholars to
           explore transformative solutions for sustainable development. This
           premier gathering facilitates cross-sectoral dialogue, knowledge
           sharing, and collaboration to address environmental, social, and
