@@ -106,7 +106,8 @@ export const Hero = () => {
         objectFit="cover"
         className="blur-sm"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 backdrop-blur-sm" />
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 backdrop-blur-sm" /> */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70 backdrop-blur-[1px]" />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
         <motion.h2
