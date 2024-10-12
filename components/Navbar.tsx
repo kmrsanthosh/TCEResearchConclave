@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navItems } from "@/app/data";
+import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar: React.FC = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false);
+    setTimeout(() => setIsMenuOpen(false), 300);
   };
 
   return (
@@ -58,21 +59,27 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
-                onClick={() => scrollToSection(item.id)}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{
+          height: isMenuOpen ? "auto" : 0,
+          opacity: isMenuOpen ? 1 : 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="overflow-hidden lg:hidden"
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
         </div>
-      )}
+      </motion.div>
     </nav>
   );
 };
