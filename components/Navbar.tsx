@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
             <Image
               src="/assets/logos/TCE-Logo.svg"
               alt="TCE Logo"
-              width={180}
+              width={220}
               height={40}
               priority
             />
