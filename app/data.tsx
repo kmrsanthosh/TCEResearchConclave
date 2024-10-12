@@ -31,6 +31,17 @@ export interface TimelineElement {
   description: string;
 }
 
+export const guidelines = [
+  "RC 2025 invites full-length original research contributions from professionals from industries, R&D organizations, academic institutions, government departments, and research scholars from across the country.",
+  "Full-length original research or review articles not exceeding __________ format shall be submitted.",
+  "The manuscript should contain original research ideas, developmental ideas, analysis, findings, results, etc.",
+  "The manuscript should not have been published in any journals/magazines or conference proceedings and should not be under review in any of them.",
+  "Further, the manuscript should contain the names of the corresponding author and all other authors with e-mail id and affiliation.",
+  "Soft copy of the full-length manuscripts shall be submitted through the manuscript submission portal.",
+  "All the submitted manuscripts will be sent for peer review, and the corresponding author will be notified of the outcome of the review process.",
+  "Suggestions by the reviewers for improvement of the manuscript, if any, will be sent back to the corresponding author, and the revised version of the manuscript shall be submitted within ten days from the date of notification.",
+];
+
 export const topics = [
   {
     title: "Energy and Environment Sustainability",
@@ -110,6 +121,72 @@ export const topics = [
       "Sustainable Tourism and Hospitality",
       "Education for Sustainable Development",
       "Sustainable Policy and Governance",
+    ],
+  },
+];
+
+export interface RegistrationStep {
+  title: string;
+  content: string[];
+}
+
+export const registrationSteps: RegistrationStep[] = [
+  {
+    title: "Camera-ready paper submission Guidelines",
+    content: [
+      "The camera-ready paper submission is open until November 15, 2023.",
+      "Authors are requested to check the formatting of the paper before the final submission.",
+      "Your final paper will be checked to verify the format and compliance with the reviewers' comments.",
+      "The similarity index of the final paper should not be above 25% in any case (including reference).",
+      "The conference technical committee will check for plagiarism, compliance with reviewer comments, and format before final acceptance.",
+      "If a paper fails to comply with these requirements, it may be rejected at any stage.",
+    ],
+  },
+  {
+    title: "Camera-ready Paper Preparation",
+    content: [
+      "Revise your manuscript carefully per the reviewers' comments and proofread thoroughly.",
+      "Check names, affiliations, postal addresses, and e-mail addresses in the paper.",
+      "The final paper must be in IEEE double-column format and not exceed six pages.",
+      "Use Times New Roman font throughout the paper.",
+      "Title should be in 24 font size regular, not bold or italic.",
+      "Author's name in size 9 regular, without titles like Mr/Mrs/Dr/Prof.",
+      "Author affiliation in size 9 regular.",
+      "Abstract and Keywords in bold, italic, size 9.",
+      "Headings in capital (1st letter) size 10 regular and centered.",
+      "Subheadings in size 10, italic and left justified.",
+      "Figures and graphs should be high resolution.",
+      "Figure and table captions in size 8 regular.",
+      "References in size 8 and in the prescribed form.",
+    ],
+  },
+  {
+    title: "IEEEXplore® Compatibility",
+    content: [
+      "Use IEEE PDFeXpress® service to generate the PDF version of your final paper.",
+      "Enter Conference ID 57940X and create your login if you are a new user.",
+      "Submit your paper for checking or converting.",
+      "Download the IEEE-compatible PDF version for your paper.",
+    ],
+  },
+  {
+    title: "Electronic IEEE Copyright Submission",
+    content: [
+      "Complete and sign the electronic Copyright Form (eCF) on the Microsoft CMT portal.",
+      "Verify the details during copyright form submission.",
+      "You will receive an automated confirmation email upon successful submission.",
+      "Include a copy of the copyright form with your camera-ready submission.",
+    ],
+  },
+  {
+    title: "Registration",
+    content: [
+      "Begin registration after acceptance of your final camera-ready paper.",
+      "At least one author of each accepted paper must register for the conference.",
+      "Pay the registration fee through the provided portal: eazypay.icicibank.com",
+      "Upload the transaction receipt in the registration form.",
+      "Complete your registration by visiting the provided Form Link.",
+      "The last date of registration is October 31, 2023.",
     ],
   },
 ];
