@@ -1,4 +1,5 @@
 import About from "@/components/Home/About";
+import CallForPaper from "@/components/Home/CallForPaper";
 import { Hero } from "@/components/Home/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Hero />
       <About />
+      <CallForPaper />
     </div>
   );
 }
