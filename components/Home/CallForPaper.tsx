@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { TimelineLayout } from "../timeline/timeline-layout";
 import { timelineData } from "@/app/data";
 import SectionHeader from "../SectionHeader";
+import AnimatedTimeline from "../timeline/AnimatedTimeline";
 
 const CallForPaper: React.FC = () => {
   return (
@@ -56,9 +56,7 @@ const CallForPaper: React.FC = () => {
             >
               Key Dates
             </motion.h1>
-            <div className="mx-auto pl-20 w-fit">
-              <TimelineLayout items={timelineData} />
-            </div>
+            <AnimatedTimeline timelineData={timelineData} />
           </div>
         </div>
       </section>
