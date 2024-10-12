@@ -113,7 +113,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className=" text-center md:text-lg font-bold tracking-[8px] uppercase mb-8"
+          className=" text-center md:text-lg font-bold tracking-[5px] md:tracking-[8px] uppercase mb-8"
         >
           Thiagarajar College of Engineering
         </motion.h2>
@@ -122,7 +122,7 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-center"
+          className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 text-center"
         >
           2025 Research Conclave
         </motion.h1>
@@ -133,8 +133,10 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex items-center mb-8"
         >
-          <CalendarDateRangeIcon className="w-8 h-8 mr-3" />
-          <span className="text-xl font-semibold">May 17-18, 2025</span>
+          <CalendarDateRangeIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
+          <span className="text-lg md:text-xl font-semibold">
+            May 17-18, 2025
+          </span>
         </motion.div>
 
         <motion.div
@@ -143,8 +145,8 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex items-center mb-12"
         >
-          <MapPinIcon className="w-8 h-8 mr-3" />
-          <span className="text-xl font-semibold">
+          <MapPinIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
+          <span className="text-lg md:text-xl font-semibold">
             TCE, Thiruparankundram, Madurai{" "}
           </span>
         </motion.div>
@@ -158,10 +160,10 @@ export const Hero = () => {
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div
               key={unit}
-              className="text-center bg-white/10 rounded-lg p-4 backdrop-blur-md"
+              className="text-center bg-white/10 rounded-lg p-2 md:p-4 backdrop-blur-md"
             >
-              <div className="text-4xl font-bold">{value}</div>
-              <div className="text-sm uppercase">{unit}</div>
+              <div className="text-2xl md:text-4xl font-bold">{value}</div>
+              <div className="text-xs md:text-sm uppercase">{unit}</div>
             </div>
           ))}
         </motion.div>
@@ -172,7 +174,9 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center"
         >
-          <h3 className="text-xl font-semibold mb-2">In Cooperation With</h3>
+          <h3 className="text-lg md:text-xl font-semibold mb-2">
+            In Cooperation With
+          </h3>
           <div className="flex justify-center space-x-6">
             {/* Add partner logos here */}
             <div className="w-16 h-16 bg-white/20 rounded-full" />
