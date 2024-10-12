@@ -37,7 +37,7 @@ const PaperTopicsAccordion: React.FC = () => {
             className="border rounded-lg shadow-sm"
           >
             <AccordionTrigger className="px-4 py-3 hover:bg-gray-50 transition-colors">
-              <span className="text-lg font-semibold text-gray-900">
+              <span className="text-lg font-semibold text-gray-900 text-left">
                 {topic.title}
               </span>
             </AccordionTrigger>
