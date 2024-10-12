@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
 import { motion } from "framer-motion";
-import { guidelines, topics } from "@/app/data";
+import { guidelines } from "@/app/data";
 
 const AuthorGuidelines = () => {
   return (
