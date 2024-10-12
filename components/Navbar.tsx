@@ -14,14 +14,14 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="hidden lg:flex flex-row space-x-5 ">
+      {/* <div className="hidden lg:flex flex-row space-x-5 ">
         <h1 className="font-medium ">Home</h1>
         <h1 className="font-medium ">Submissions</h1>
         <h1 className="font-medium ">Program</h1>
         <h1 className="font-medium ">Speakers</h1>
         <h1 className="font-medium ">Participate</h1>
         <h1 className="font-medium ">Organization</h1>
-      </div>
+      </div> */}
     </nav>
   );
 };
