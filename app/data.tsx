@@ -2,7 +2,7 @@ export const timelineData = [
   {
     id: 1,
     title: "First event",
-    date: "2025-01-01",
+    date: "2024-10-10",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio euismod lacinia at quis risus sed vulputate odio ut. Quam viverra orci sagittis eu volutpat odio facilisis mauris.",
   },
