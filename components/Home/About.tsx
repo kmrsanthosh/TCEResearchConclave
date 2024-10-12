@@ -7,12 +7,12 @@ const About = () => {
   return (
     <section className="flex flex-col w-full md:flex-row">
       {/* Left Section */}
-      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5 border border-red-500">
+      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-2 border border-red-500">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-medium text-xl text-primary-accent"
+          className="font-bold text-2xl text-primary-accent"
         >
           About TCE
         </motion.h1>
@@ -42,12 +42,12 @@ const About = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5 border border-red-500">
+      <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-2 border border-red-500">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-medium text-xl text-primary-accent"
+          className="font-bold text-xl text-primary-accent"
         >
           About The Conclave
         </motion.h1>
