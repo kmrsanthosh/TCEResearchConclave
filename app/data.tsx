@@ -1,3 +1,16 @@
+export interface NavItem {
+  label: string;
+  id: string;
+}
+
+export const navItems: NavItem[] = [
+  { label: "Home", id: "home" },
+  { label: "About", id: "about" },
+  { label: "Call for Papers", id: "call-for-papers" },
+  { label: "Registration Details", id: "registration-details" },
+  { label: "Author Guidelines", id: "author-guidelines" },
+];
+
 export const timelineData = [
   {
     id: 1,
