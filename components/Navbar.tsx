@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setNavbarHeight(320);
+        setNavbarHeight(300);
       } else {
         setNavbarHeight(64);
       }
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                   onClick={() => scrollToSection(item.id)}
                 >
                   {item.label}
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 "
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left "
               onClick={() => scrollToSection(item.id)}
             >
               {item.label}
