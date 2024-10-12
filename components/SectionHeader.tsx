@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 interface SectionHeaderProps {
+  id?: string;
   sectionTitle: string;
   sectionDescription: string;
   sectionButtonText: string;
@@ -10,7 +11,10 @@ interface SectionHeaderProps {
 
 const SectionHeader = (props: SectionHeaderProps) => {
   return (
-    <section className="relative bg-primary-accent text-white overflow-hidden">
+    <section
+      id={props.id}
+      className="relative bg-primary-accent text-white overflow-hidden"
+    >
       <div className="container mx-auto py-16 px-4 relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
