@@ -175,7 +175,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="bg-primary-accent py-3 px-5 rounded-lg mb-12 text-sm sm:text-lg md:text-xl font-medium "
+          className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium "
         >
           Register Now
         </motion.button>
@@ -186,14 +186,21 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center"
         >
-          <h3 className="text-lg md:text-xl font-semibold mb-2">
+          <h3 className="text-lg md:text-xl font-semibold mb-4">
             In Cooperation With
           </h3>
           <div className="flex justify-center space-x-6">
             {/* Add partner logos here */}
-            <div className="w-16 h-16 bg-white/20 rounded-full" />
-            <div className="w-16 h-16 bg-white/20 rounded-full" />
-            <div className="w-16 h-16 bg-white/20 rounded-full" />
+            <div className="relative w-20 h-20 bg-white/90 backdrop-blur rounded-full">
+              <Image
+                src={"/assets/logos/Institute-innovation-Centre-Logo.png"}
+                alt={"Institute-innovation-Centre-Logo.png"}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            {/* <div className="w-16 h-16 bg-white/20 rounded-full" />
+            <div className="w-16 h-16 bg-white/20 rounded-full" /> */}
           </div>
         </motion.div>
       </div>
