@@ -86,9 +86,11 @@ const ScrollAnimatedTimelineItem: React.FC<{
     >
       {/* Icon */}
       <motion.div
-        className={`flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 ${
-          isCompleted ? "bg-emerald-500 text-emerald-50" : "text-slate-500 "
-        } shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}
+        className={`flex items-center justify-center w-10 h-10 rounded-full border border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${
+          isCompleted
+            ? "bg-emerald-500 text-emerald-50" // Emerald color when completed
+            : "bg-slate-300 text-slate-500" // Default state
+        }`}
       >
         <svg
           className="fill-current"
