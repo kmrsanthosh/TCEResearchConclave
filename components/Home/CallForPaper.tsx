@@ -11,6 +11,7 @@ const CallForPaper: React.FC = () => {
   return (
     <>
       <SectionHeader
+        id="call-for-papers"
         sectionTitle={"Call for Papers"}
         sectionDescription={
           "Submit your research papers and contribute to the advancement of knowledge in your field."

@@ -9,6 +9,7 @@ const AuthorGuidelines = () => {
   return (
     <>
       <SectionHeader
+        id="author-guidelines"
         sectionTitle={"Author Guidelines"}
         sectionDescription={
           "Please take a moment to read our registration policy carefully before continuing."

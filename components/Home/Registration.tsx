@@ -12,6 +12,7 @@ const Registration = () => {
   return (
     <>
       <SectionHeader
+        id="registration-details"
         sectionTitle="Registration Details"
         sectionDescription="Before proceeding, we kindly ask you to thoroughly review our registration policy."
         sectionButtonText="Register Now"

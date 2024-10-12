@@ -98,7 +98,7 @@ export const Hero = () => {
 
   return (
     // <section className="relative h-[calc(100vh-95px)] overflow-hidden">
-    <section className="relative h-screen overflow-hidden">
+    <section id="home" className="relative h-screen overflow-hidden">
       <Image
         src="/assets/images/TCE-Main-Building.webp"
         alt="TCE Main Building Image"

@@ -5,7 +5,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="flex flex-col w-full md:flex-row">
+    <section id="about" className="flex flex-col w-full md:flex-row">
       {/* Left Section */}
       <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-2 ">
         <motion.h1
