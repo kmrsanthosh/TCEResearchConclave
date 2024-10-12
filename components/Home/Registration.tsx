@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import SectionHeader from "../SectionHeader";
-import { guidelines, registrationSteps } from "@/app/data";
+import { registrationSteps } from "@/app/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRight, CheckCircle } from "lucide-react";
 
