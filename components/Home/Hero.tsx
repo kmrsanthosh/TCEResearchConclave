@@ -143,7 +143,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex items-center mb-12"
+          className="flex items-center mb-10"
         >
           <MapPinIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
           <span className="text-sm sm:text-lg md:text-xl font-semibold">
@@ -155,7 +155,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="grid grid-cols-4 gap-4 mb-12"
+          className="grid grid-cols-4 gap-4 mb-10"
         >
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div
@@ -171,6 +171,9 @@ export const Hero = () => {
             </div>
           ))}
         </motion.div>
+        <motion.button className="bg-primary-accent py-3 px-5 rounded-lg mb-12 text-sm sm:text-lg md:text-xl font-semibold ">
+          Register Now
+        </motion.button>
 
         <motion.div
           initial={{ opacity: 0 }}
