@@ -134,7 +134,7 @@ export const Hero = () => {
           className="flex items-center mb-8"
         >
           <CalendarDateRangeIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
-          <span className="text-lg md:text-xl font-semibold">
+          <span className="text-sm sm:text-lg md:text-xl font-semibold">
             May 17-18, 2025
           </span>
         </motion.div>
@@ -146,7 +146,7 @@ export const Hero = () => {
           className="flex items-center mb-12"
         >
           <MapPinIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
-          <span className="text-lg md:text-xl font-semibold">
+          <span className="text-sm sm:text-lg md:text-xl font-semibold">
             TCE, Thiruparankundram, Madurai{" "}
           </span>
         </motion.div>
@@ -160,10 +160,14 @@ export const Hero = () => {
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div
               key={unit}
-              className="text-center bg-white/10 rounded-lg p-2 md:p-4 backdrop-blur-md"
+              className="text-center bg-white/10 rounded-lg p-2 sm:p-4 md:p-4 backdrop-blur-md"
             >
-              <div className="text-2xl md:text-4xl font-bold">{value}</div>
-              <div className="text-xs md:text-sm uppercase">{unit}</div>
+              <div className="text-xl sm:text-2xl md:text-4xl font-bold">
+                {value}
+              </div>
+              <div className="text-[0.6rem] sm:text-xs md:text-sm uppercase">
+                {unit}
+              </div>
             </div>
           ))}
         </motion.div>
