@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                  className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 active:bg-gray-200"
                   onClick={() => scrollToSection(item.id)}
                 >
                   {item.label}
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 "
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left "
+              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left active:bg-gray-200"
               onClick={() => scrollToSection(item.id)}
             >
               {item.label}
