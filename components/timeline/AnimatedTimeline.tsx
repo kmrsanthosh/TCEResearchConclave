@@ -1,6 +1,6 @@
 import { TimelineElement } from "@/app/data";
 import React, { useEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, Variants } from "framer-motion";
 
 interface AnimatedTimelineProps {
   timelineData: TimelineElement[];
@@ -45,8 +45,8 @@ const ScrollAnimatedTimelineItem: React.FC<{
   item: TimelineElement;
   index: number;
   isCompleted: boolean;
-  variants: any;
-}> = ({ item, index, isCompleted, variants }) => {
+  variants: Variants;
+}> = ({ item, isCompleted, variants }) => {
   const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
 
