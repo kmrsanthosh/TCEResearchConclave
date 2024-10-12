@@ -20,8 +20,8 @@ const CallForPaper: React.FC = () => {
       />
 
       <section className="w-full ">
-        <div className="flex flex-col md:flex-row w-full pt-5">
-          <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
+        <div className="flex flex-col lg:flex-row w-full pt-5">
+          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const CallForPaper: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary-accent text-white font-semibold py-3 px-6 w-[40%] mx-auto rounded-full hover:bg-opacity-90 transition duration-300"
+              className="bg-primary-accent text-white font-semibold py-3 px-6 lg:w-[40%] mx-auto rounded-full hover:bg-opacity-90 transition duration-300"
             >
               Download Call For Paper
             </motion.button>
@@ -49,7 +49,7 @@ const CallForPaper: React.FC = () => {
             <PaperTopicsAccordion />
           </div>
 
-          <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
+          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
