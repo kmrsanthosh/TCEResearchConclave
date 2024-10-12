@@ -8,29 +8,51 @@ import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [navbarHeight, setNavbarHeight] = useState(64); // Default to 64px
 
-  const scrollToSection = useCallback((id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const navbarHeight = 64; // Assuming the navbar height is 64px (h-16)
-      const sectionPosition = section.getBoundingClientRect().top;
-      const offsetPosition =
-        sectionPosition + window.pageYOffset - navbarHeight;
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setNavbarHeight(320);
+      } else {
+        setNavbarHeight(64);
+      }
+    };
 
-      // Close the menu before scrolling
-      setIsMenuOpen(false);
+    // Initial check on component mount
+    handleResize();
 
-      // Use setTimeout to ensure the menu is closed before scrolling
-      setTimeout(() => {
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }, 100);
-    } else {
-      console.error(`Section with id "${id}" not found`);
-    }
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const scrollToSection = useCallback(
+    (id: string) => {
+      const section = document.getElementById(id);
+      if (section) {
+        const sectionPosition = section.getBoundingClientRect().top;
+        const offsetPosition =
+          sectionPosition + window.pageYOffset - navbarHeight;
+
+        // Close the menu before scrolling
+        setIsMenuOpen(false);
+
+        // Use setTimeout to ensure the menu is closed before scrolling
+        setTimeout(() => {
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }, 100);
+      } else {
+        console.error(`Section with id "${id}" not found`);
+      }
+    },
+    [navbarHeight]
+  );
 
   useEffect(() => {
     const handleResize = () => {
