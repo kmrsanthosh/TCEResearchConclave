@@ -5,6 +5,7 @@ import React from "react";
 import { timelineData } from "@/app/data";
 import SectionHeader from "../SectionHeader";
 import AnimatedTimeline from "../timeline/AnimatedTimeline";
+import PaperTopicsAccordion from "../PaperTopicsAccordion";
 
 const CallForPaper: React.FC = () => {
   return (
@@ -45,6 +46,7 @@ const CallForPaper: React.FC = () => {
               Students are invited submit original and unpublished research
               papers on the following topics but not limited to
             </motion.p>
+            <PaperTopicsAccordion />
           </div>
 
           <div className="flex flex-col w-full md:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
