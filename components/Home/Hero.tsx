@@ -171,7 +171,12 @@ export const Hero = () => {
             </div>
           ))}
         </motion.div>
-        <motion.button className="bg-primary-accent py-3 px-5 rounded-lg mb-12 text-sm sm:text-lg md:text-xl font-medium ">
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="bg-primary-accent py-3 px-5 rounded-lg mb-12 text-sm sm:text-lg md:text-xl font-medium "
+        >
           Register Now
         </motion.button>
 
