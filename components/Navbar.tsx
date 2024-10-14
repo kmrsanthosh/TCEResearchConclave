@@ -13,9 +13,9 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setNavbarHeight(300);
+        setNavbarHeight(310);
       } else {
-        setNavbarHeight(64);
+        setNavbarHeight(94);
       }
     };
 
@@ -67,16 +67,43 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <Image
-              src="/assets/logos/TCE-Logo.svg"
-              alt="TCE Logo"
-              width={220}
-              height={40}
-              priority
-            />
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20 md:h-24">
+          <div className="flex flex-shrink-0 flex-row space-x-2 md:space-x-7">
+            <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px] ">
+              <Image
+                src="/assets/logos/TCE-Logo.svg"
+                alt="TCE Logo"
+                // width={280}
+                // height={40}
+                layout="fill" // required
+                objectFit="cover" // change to suit your needs
+                priority
+              />
+            </div>
+            <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+              <Image
+                src="/assets/logos/iicCircle.jpeg"
+                alt="TCE Logo"
+                // width={280}
+                // height={40}
+                layout="fill" // required
+                objectFit="cover" // change to suit your needs
+                className="rounded-full"
+                priority
+              />
+            </div>
+            <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+              <Image
+                src="/assets/logos/NAAC_LOGO.png"
+                alt="TCE Logo"
+                // width={280}
+                // height={40}
+                layout="fill" // required
+                objectFit="cover" // change to suit your needs
+                priority
+              />
+            </div>
           </div>
           <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-4">
