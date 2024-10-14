@@ -2,14 +2,14 @@
 
 import React, { useState } from "react";
 import SectionHeader from "../SectionHeader";
-import { registrationSteps } from "@/app/data";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronRight, CheckCircle } from "lucide-react";
+// import { registrationSteps } from "@/app/data";
+// import { AnimatePresence, motion } from "framer-motion";
+// import { ChevronRight, CheckCircle } from "lucide-react";
 import RegistrationFeesTable from "../RegistrationFeesTable";
 import PaymentInformation from "../PaymentInformation";
 
 const Registration = () => {
-  const [activeStep, setActiveStep] = useState<number>(0);
+  // const [activeStep, setActiveStep] = useState<number>(0);
 
   return (
     <>
