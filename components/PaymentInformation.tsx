@@ -31,9 +31,9 @@ const PaymentInformation: React.FC = () => {
         >
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
           <p className="text-gray-600">
-            Type T C E with space (as mentioned"T space C space E”) in the
-            “Enter Institute Name” field and select the “TCE SOUVENIOR” from the
-            appearing drop down menu
+            Type T C E with space (as mentioned&quot;T space C space E&quot;) in
+            the “Enter Institute Name” field and select the “TCE SOUVENIOR” from
+            the appearing drop down menu
           </p>
         </motion.div>
         <motion.div
