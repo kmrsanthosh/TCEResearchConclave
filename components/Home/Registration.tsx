@@ -23,7 +23,7 @@ const Registration = () => {
       <div className=" bg-gradient-to-br from-gray-100 to-gray-200 p-4 sm:p-6 md:p-8 lg:px-12 lg:pb-12">
         <RegistrationFeesTable />
 
-        <div className="max-w-7xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.02]">
+        <div className="max-w-7xl mt-5 mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.02]">
           <div className="md:flex">
             <div className="md:w-1/3 bg-gray-50 p-6 md:p-8 lg:p-10">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">
