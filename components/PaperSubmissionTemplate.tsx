@@ -7,7 +7,7 @@ const PaperSubmissionTemplate: React.FC = () => {
     <>
       <div className="mt-5 p-1 sm:p-6 md:pt-8 lg:pt-12 rounded-lg ">
         <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
-          Paper Submission Template
+          Paper Submission
         </h2>
 
         <div className="mt-5 space-y-4">
