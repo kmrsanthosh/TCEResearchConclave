@@ -6,6 +6,7 @@ import { timelineData } from "@/app/data";
 import SectionHeader from "../SectionHeader";
 import AnimatedTimeline from "../timeline/AnimatedTimeline";
 import PaperTopicsAccordion from "../PaperTopicsAccordion";
+import PaperSubmissionTemplate from "../PaperSubmissionTemplate";
 
 const CallForPaper: React.FC = () => {
   return (
@@ -60,6 +61,7 @@ const CallForPaper: React.FC = () => {
               Key Dates
             </motion.h1>
             <AnimatedTimeline timelineData={timelineData} />
+            <PaperSubmissionTemplate />
           </div>
         </div>
       </section>
