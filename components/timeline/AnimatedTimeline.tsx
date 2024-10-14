@@ -111,7 +111,9 @@ const ScrollAnimatedTimelineItem: React.FC<{
         whileHover={{ scale: 1.05 }}
       >
         <div className="flex items-center justify-between space-x-2 mb-1">
-          <div className="font-bold text-primary-accent">{item.title}</div>
+          <div className="font-bold text-primary-accent text-left">
+            {item.title}
+          </div>
           <time
             className={`font-caveat font-medium ${
               isCompleted ? "text-emerald-500" : "text-amber-500"
@@ -120,7 +122,7 @@ const ScrollAnimatedTimelineItem: React.FC<{
             {new Date(item.date).toLocaleDateString()}
           </time>
         </div>
-        <div className="text-slate-500">{item.description}</div>
+        {/* <div className="text-slate-500">{item.description}</div> */}
       </motion.div>
     </motion.div>
   );
