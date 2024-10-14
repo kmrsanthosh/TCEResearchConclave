@@ -98,7 +98,10 @@ export const Hero = () => {
 
   return (
     // <section className="relative h-[calc(100vh-95px)] overflow-hidden">
-    <section id="home" className="relative h-screen overflow-hidden">
+    <section
+      id="home"
+      className="relative md:h-[calc(100vh-95px)] h-screen overflow-hidden"
+    >
       <Image
         src="/assets/images/TCE-Main-Building.webp"
         alt="TCE Main Building Image"
@@ -115,7 +118,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className=" text-center md:text-lg font-bold tracking-[5px] md:tracking-[8px] uppercase mb-8"
+          className=" text-center md:text-2xl font-bold tracking-[5px] md:tracking-[8px] uppercase mb-8"
         >
           Thiagarajar College of Engineering
         </motion.h2>
@@ -182,7 +185,7 @@ export const Hero = () => {
           Register Now
         </motion.button>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -192,7 +195,6 @@ export const Hero = () => {
             In Cooperation With
           </h3>
           <div className="flex justify-center space-x-6">
-            {/* Add partner logos here */}
             <div className="relative w-20 h-20 bg-white/90 backdrop-blur rounded-full">
               <Image
                 src={"/assets/logos/Institute-innovation-Centre-Logo.png"}
@@ -201,10 +203,8 @@ export const Hero = () => {
                 objectFit="cover"
               />
             </div>
-            {/* <div className="w-16 h-16 bg-white/20 rounded-full" />
-            <div className="w-16 h-16 bg-white/20 rounded-full" /> */}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
