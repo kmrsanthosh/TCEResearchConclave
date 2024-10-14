@@ -14,22 +14,22 @@ export const navItems: NavItem[] = [
 export const timelineData = [
   {
     id: 1,
-    title: "First event",
-    date: "2024-10-10",
+    title: "Full Paper Submission",
+    date: "2025-04-10",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio euismod lacinia at quis risus sed vulputate odio ut. Quam viverra orci sagittis eu volutpat odio facilisis mauris.",
   },
   {
     id: 2,
-    title: "Second event",
-    date: "2025-02-01",
+    title: "Acceptance notification",
+    date: "2025-05-02",
     description:
       "Aut eius excepturi ex recusandae eius est minima molestiae. Nam dolores iusto ad fugit reprehenderit hic dolorem quisquam et quia omnis non suscipit nihil sit libero distinctio. Ad dolorem tempora sit nostrum voluptatem qui tempora unde? Sit rerum magnam nam ipsam nesciunt aut rerum necessitatibus est quia esse non magni quae.",
   },
   {
     id: 3,
-    title: "Third event",
-    date: "2025-03-01",
+    title: "Final submission",
+    date: "2025-05-09",
     description:
       "Sit culpa quas ex nulla animi qui deleniti minus rem placeat mollitia. Et enim doloremque et quia sequi ea dolores voluptatem ea rerum vitae. Aut itaque incidunt est aperiam vero sit explicabo fuga id optio quis et molestiae nulla ex quae quam. Ab eius dolores ab tempora dolorum eos beatae soluta At ullam placeat est incidunt cumque.",
   },
@@ -147,7 +147,7 @@ export const registrationSteps: RegistrationStep[] = [
   {
     title: "Camera-ready paper submission Guidelines",
     content: [
-      "The camera-ready paper submission is open until November 15, 2023.",
+      "The camera-ready paper submission is open until January xx, xxxx.",
       "Authors are requested to check the formatting of the paper before the final submission.",
       "Your final paper will be checked to verify the format and compliance with the reviewers' comments.",
       "The similarity index of the final paper should not be above 25% in any case (including reference).",
@@ -177,7 +177,7 @@ export const registrationSteps: RegistrationStep[] = [
     title: "IEEEXplore® Compatibility",
     content: [
       "Use IEEE PDFeXpress® service to generate the PDF version of your final paper.",
-      "Enter Conference ID 57940X and create your login if you are a new user.",
+      "Enter Conference ID xxxxxx and create your login if you are a new user.",
       "Submit your paper for checking or converting.",
       "Download the IEEE-compatible PDF version for your paper.",
     ],
@@ -199,7 +199,7 @@ export const registrationSteps: RegistrationStep[] = [
       "Pay the registration fee through the provided portal: eazypay.icicibank.com",
       "Upload the transaction receipt in the registration form.",
       "Complete your registration by visiting the provided Form Link.",
-      "The last date of registration is October 31, 2023.",
+      "The last date of registration is January xx, xxxx .",
     ],
   },
 ];
