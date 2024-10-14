@@ -22,7 +22,7 @@ const PaymentInformation: React.FC = () => {
             Step 1: Please note that the registration fee should be paid
             exclusively through the provided portal:{" "}
             <Link
-              href={"https://eazypay.icicibank.com/homePage"}
+              href={"https://eazypay.icicibank.com/"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:text-blue-800"
