@@ -15,9 +15,10 @@ const feeData: FeeEntry[] = [
 
 const RegistrationFeesTable: React.FC = () => {
   return (
-    <div className="mt-16 p-1 sm:p-6 md:p-8 lg:p-12 rounded-lg ">
+    <div className="sm:p-6 md:p-8 rounded-lg ">
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
         Registration Fees
+        <span className="text-lg ml-2">(Inclusive of GST)</span>
       </h2>
       <div className="overflow-hidden rounded-lg">
         <motion.div
