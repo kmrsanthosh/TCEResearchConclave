@@ -60,10 +60,15 @@ export const Footer: React.FC = () => {
 
           <FooterSection title="Contact Us">
             <address className="text-sm text-white not-italic">
-              <p className="flex items-center mb-2">
-                <MapPinIcon className="h-5 w-5 mr-2" />
-                TCE, Thiruparankundram, Madurai
-              </p>
+              <Link
+                prefetch={false}
+                href={"https://maps.app.goo.gl/rJkd5gBVnGYDiTCK9"}
+              >
+                <p className="flex items-center mb-2">
+                  <MapPinIcon className="h-5 w-5 mr-2" />
+                  TCE, Thiruparankundram, Madurai
+                </p>
+              </Link>
               <p className="flex items-center mb-2">
                 <PhoneIcon className="h-5 w-5 mr-2" />
                 +91 123 456 7890
