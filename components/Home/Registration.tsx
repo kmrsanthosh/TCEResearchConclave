@@ -5,6 +5,7 @@ import SectionHeader from "../SectionHeader";
 import { registrationSteps } from "@/app/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRight, CheckCircle } from "lucide-react";
+import RegistrationFeesTable from "../RegistrationFeesTable";
 
 const Registration = () => {
   const [activeStep, setActiveStep] = useState<number>(0);
@@ -110,6 +111,7 @@ const Registration = () => {
             </div>
           </div>
         </div>
+        <RegistrationFeesTable />
       </div>
       {/* 
         <div
