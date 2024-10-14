@@ -111,9 +111,9 @@ export const Hero = () => {
         priority={true}
       />
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 backdrop-blur-sm" /> */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/70 backdrop-blur-[1px] " />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+      <div className="relative  z-10 flex flex-col items-center justify-center h-full text-white px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -176,11 +176,20 @@ export const Hero = () => {
             </div>
           ))}
         </motion.div>
-        <motion.button
+        {/* <motion.button
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium "
+          className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium hover:bg-opacity-90 transition duration-300"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Register Now
+        </motion.button> */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium hover:bg-opacity-90 transition duration-300"
         >
           Register Now
         </motion.button>
