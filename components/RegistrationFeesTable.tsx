@@ -18,8 +18,12 @@ const RegistrationFeesTable: React.FC = () => {
     <div className="sm:p-6 md:p-8 rounded-lg ">
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
         Registration Fees
-        <span className="text-lg ml-2">(Inclusive of GST)</span>
+        <span className="block md:inline text-lg ml-2">(Inclusive of GST)</span>
       </h2>
+      {/* <p className="mb-4 font-semibold text-lg">
+        The registration fee for external participants and delegates to
+        attend/present papers (Inclusive of GST) is listed below.
+      </p> */}
       <div className="overflow-hidden rounded-lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
