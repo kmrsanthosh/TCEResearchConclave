@@ -10,7 +10,7 @@ const PaperSubmissionTemplate: React.FC = () => {
           Paper Submission Template
         </h2>
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-5 space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
