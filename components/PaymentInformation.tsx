@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const PaymentInformation: React.FC = () => {
   return (
-    <div className="sm:p-6 md:p-8 rounded-lg ">
+    <div className="sm:p-6 md:p-8 rounded-lg mt-10 md:mt-0">
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
         Payment Information
       </h2>
@@ -20,7 +21,15 @@ const PaymentInformation: React.FC = () => {
           <p className="text-gray-600">
             Step 1: Please note that the registration fee should be paid
             exclusively through the provided portal:{" "}
-            <a>eazypay.icicibank.com</a>
+            <Link
+              href={"https://eazypay.icicibank.com/homePage"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+            >
+              eazypay.icicibank.com
+              <ExternalLink className="ml-1 h-4 w-4" />
+            </Link>
           </p>
         </motion.div>
         <motion.div
@@ -79,9 +88,18 @@ const PaymentInformation: React.FC = () => {
         >
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
           <p className="text-gray-600">
-            Click the below link (https://forms.gle/kwc4LLmbtjZZnxVV7) &
-            complete the registration by entering details correctly & uploading
-            the proper payment receipt{" "}
+            Please click the link below
+            <Link
+              href={"https://forms.gle/kwc4LLmbtjZZnxVV7"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+            >
+              (https://forms.gle/kwc4LLmbtjZZnxVV7)
+              <ExternalLink className="ml-1 h-4 w-4" />
+            </Link>
+            , complete the registration by entering the correct details, and
+            upload the appropriate payment receipt.
           </p>
         </motion.div>
       </div>
