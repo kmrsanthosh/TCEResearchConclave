@@ -2,17 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
-interface FeeEntry {
-  category: string;
-  fee: string;
-}
-
-const feeData: FeeEntry[] = [
-  { category: "Student (UG/PG)", fee: "Rs. 4000 /-" },
-  { category: "Research Scholar", fee: "Rs. 5000 /-" },
-  { category: "Faculty Members", fee: "Rs. 6000 /-" },
-];
-
 const PaperSubmissionTemplate: React.FC = () => {
   return (
     <div className="mt-5 p-1 sm:p-6 md:p-8 lg:p-12 rounded-lg ">
