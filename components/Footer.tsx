@@ -6,14 +6,14 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 
-const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({
-  href,
-  children,
-}) => (
-  <Link href={href} className="hover:text-white transition-colors duration-300">
-    {children}
-  </Link>
-);
+// const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({
+//   href,
+//   children,
+// }) => (
+//   <Link href={href} className="hover:text-white transition-colors duration-300">
+//     {children}
+//   </Link>
+// );
 
 const FooterSection: React.FC<{ title: string; children: React.ReactNode }> = ({
   title,
