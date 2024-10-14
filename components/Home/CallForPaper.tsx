@@ -51,7 +51,7 @@ const CallForPaper: React.FC = () => {
             <PaperTopicsAccordion />
           </div>
 
-          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
+          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify ">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,6 +62,13 @@ const CallForPaper: React.FC = () => {
             </motion.h1>
             <AnimatedTimeline timelineData={timelineData} />
             <PaperSubmissionTemplate />
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-primary-accent text-white font-semibold py-3 px-6 lg:w-[50%] mx-auto mt-5 md:mt-0 rounded-full hover:bg-opacity-90 transition duration-300"
+            >
+              Download Paper Template
+            </motion.button>
           </div>
         </div>
       </section>
