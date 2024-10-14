@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 const PaperSubmissionTemplate: React.FC = () => {
   return (
-    <div className="mt-5 p-1 sm:p-6 md:p-8 lg:p-12 rounded-lg ">
+    <div className="mt-5 p-1 sm:p-6 md:p-8 lg:py-12 rounded-lg ">
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
         Paper Submission Template
       </h2>
