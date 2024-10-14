@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FooterSection title="About TCE">
-            <p className="text-sm text-white">
+            <p className="text-sm text-white text-justify">
               Thiagarajar College of Engineering (TCE) is a premier institution
               known for its academic excellence and research initiatives.
             </p>
@@ -40,16 +40,20 @@ export const Footer: React.FC = () => {
           <FooterSection title="Quick Links">
             <ul className="space-y-2 text-sm">
               <li>
-                <FooterLink href="/about">About the Conclave</FooterLink>
+                <FooterLink href="#about">About the Conclave</FooterLink>
               </li>
               <li>
-                <FooterLink href="/schedule">Event Schedule</FooterLink>
+                <FooterLink href="#call-for-papers">Event Schedule</FooterLink>
               </li>
               <li>
-                <FooterLink href="/speakers">Speakers</FooterLink>
+                <FooterLink href="#author-guidelines">
+                  Author Guidelines
+                </FooterLink>
               </li>
               <li>
-                <FooterLink href="/register">Registration</FooterLink>
+                <FooterLink href="#registration-details">
+                  Registration
+                </FooterLink>
               </li>
             </ul>
           </FooterSection>
@@ -64,10 +68,12 @@ export const Footer: React.FC = () => {
                 <PhoneIcon className="h-5 w-5 mr-2" />
                 +91 123 456 7890
               </p>
-              <p className="flex items-center">
-                <EnvelopeIcon className="h-5 w-5 mr-2" />
-                conclave2025@tce.edu
-              </p>
+              <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
+                <p className="flex items-center">
+                  <EnvelopeIcon className="h-5 w-5 mr-2" />
+                  rctce@tce.edu
+                </p>
+              </Link>
             </address>
           </FooterSection>
 
