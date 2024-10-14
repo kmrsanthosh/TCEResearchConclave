@@ -40,13 +40,13 @@ const SectionHeader = (props: SectionHeaderProps) => {
         >
           {props.sectionDescription}
         </motion.p>
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-white text-primary-accent font-semibold py-2 px-6 rounded-full hover:bg-opacity-90 transition duration-300"
         >
           {props.sectionButtonText}
-        </motion.button>
+        </motion.button> */}
       </div>
       <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2">
         <svg
