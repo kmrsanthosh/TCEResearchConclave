@@ -2,11 +2,9 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { timelineData } from "@/app/data";
+import { topics1, topics2 } from "@/app/data";
 import SectionHeader from "../SectionHeader";
-import AnimatedTimeline from "../timeline/AnimatedTimeline";
 import PaperTopicsAccordion from "../PaperTopicsAccordion";
-import PaperSubmissionTemplate from "../PaperSubmissionTemplate";
 
 const CallForPaper: React.FC = () => {
   return (
@@ -21,9 +19,9 @@ const CallForPaper: React.FC = () => {
         sectionButtonHref={""}
       />
 
-      <section className="w-full ">
+      <section className="flex w-full ">
         <div className="flex flex-col lg:flex-row w-full pt-5">
-          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify space-y-5">
+          <div className="flex flex-col w-full px-5 md:px-20 py-5 text-justify space-y-5">
             {/* <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -48,10 +46,13 @@ const CallForPaper: React.FC = () => {
               Students are invited submit original and unpublished research
               papers on the following topics but not limited to
             </motion.p>
-            <PaperTopicsAccordion />
+            <div className="w-full grid md:grid-cols-2 md:space-x-5 mt-5">
+              <PaperTopicsAccordion topics={topics1} />
+              <PaperTopicsAccordion topics={topics2} />
+            </div>
           </div>
 
-          <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify ">
+          {/* <div className="flex flex-col w-full lg:w-[50%] px-5 md:px-20 py-5 text-justify ">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +62,7 @@ const CallForPaper: React.FC = () => {
               Key Dates
             </motion.h1>
             <AnimatedTimeline timelineData={timelineData} />
-            {/* <PaperSubmissionTemplate /> */}
+            <PaperSubmissionTemplate />
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -69,7 +70,7 @@ const CallForPaper: React.FC = () => {
             >
               Download Paper Template
             </motion.button>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
