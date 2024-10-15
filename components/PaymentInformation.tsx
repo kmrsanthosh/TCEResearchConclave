@@ -77,7 +77,7 @@ const PaymentInformation: React.FC = () => {
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
           <p className="text-gray-600">
             Once completed with payment, Make sure download the payment receipt
-            without fail. Registration
+            without fail.
           </p>
         </motion.div>
         <motion.div
