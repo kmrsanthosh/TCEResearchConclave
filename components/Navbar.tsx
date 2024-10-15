@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <div className="flex flex-shrink-0 flex-row space-x-2 md:space-x-7">
+          <div className="flex flex-shrink-0 flex-row space-x-3 md:space-x-10">
             <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px] ">
               <Image
                 src="/assets/logos/TCE-Logo.svg"
@@ -81,15 +81,14 @@ const Navbar: React.FC = () => {
                 priority
               />
             </div>
-            <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+            <div className="relative w-[95px] h-[40px] md:h-[70px] md:w-[170px]">
               <Image
-                src="/assets/logos/iicCircle.jpeg"
+                src="/assets/logos/iiclogo.webp"
                 alt="TCE Logo"
                 // width={280}
                 // height={40}
                 layout="fill" // required
                 objectFit="cover" // change to suit your needs
-                className="rounded-full"
                 priority
               />
             </div>
@@ -105,7 +104,7 @@ const Navbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="hidden xl:block">
+          <div className="hidden ">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <button
@@ -118,7 +117,7 @@ const Navbar: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="xl:hidden">
+          <div className="">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200"
@@ -144,7 +143,7 @@ const Navbar: React.FC = () => {
           opacity: isMenuOpen ? 1 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className="xl:hidden"
+        className=""
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navItems.map((item) => (
