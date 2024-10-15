@@ -13,7 +13,7 @@ const ImportantDates = () => {
         sectionButtonText={"Submit Now"}
         sectionButtonHref={""}
       />
-      <div className="mx-20 my-10">
+      <div className="mx-5 md:mx-20 my-10">
         <AnimatedTimeline timelineData={timelineData} />
       </div>
     </>
