@@ -61,7 +61,7 @@ const CallForPaper: React.FC = () => {
               Key Dates
             </motion.h1>
             <AnimatedTimeline timelineData={timelineData} />
-            <PaperSubmissionTemplate />
+            {/* <PaperSubmissionTemplate /> */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
