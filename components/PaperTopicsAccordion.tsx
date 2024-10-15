@@ -6,9 +6,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { topics } from "@/app/data";
 
-const PaperTopicsAccordion: React.FC = () => {
+interface Subtopic {
+  title: string;
+  subtopics: string[];
+}
+
+interface PaperTopicsAccordionProp {
+  topics: Subtopic[];
+}
+
+const PaperTopicsAccordion: React.FC<PaperTopicsAccordionProp> = ({
+  topics,
+}) => {
   const [activeAccordion, setActiveAccordion] = useState<string | undefined>(
     undefined
   );
@@ -18,7 +28,7 @@ const PaperTopicsAccordion: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      className="mt-12 max-w-4xl "
+      className="max-w-4xl "
     >
       {/* <h2 className="text-3xl font-bold text-primary-accent mb-8 text-center sm:text-left">
         Research Topics
