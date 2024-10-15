@@ -65,7 +65,7 @@ export const guidelines = [
   "Suggestions by the reviewers for improvement of the manuscript, if any, will be sent back to the corresponding author, and the revised version of the manuscript shall be submitted within ten days from the date of notification.",
 ];
 
-export const topics = [
+export const topics1 = [
   {
     title: "Energy and Environment Sustainability",
     subtopics: [
@@ -106,6 +106,18 @@ export const topics = [
       "Blockchain for Sustainable Supply Chain",
     ],
   },
+  {
+    title: "Digital Sustainability and Transformation",
+    subtopics: [
+      "Green IT and Computing",
+      "Digitalization for Sustainability",
+      "Artificial Intelligence for Environmental Sustainability",
+      "Cyber-Physical Systems for Sustainable Infrastructure",
+      "Blockchain for Sustainable Supply Chain",
+    ],
+  },
+];
+export const topics2 = [
   {
     title: "Humanities and Social Sustainability",
     subtopics: [
