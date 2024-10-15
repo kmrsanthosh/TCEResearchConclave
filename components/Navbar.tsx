@@ -5,12 +5,15 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { navItems } from "@/app/data";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarRef = useRef<HTMLDivElement>(null);
   const [navbarHeight, setNavbarHeight] = useState(0);
   const menuRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const updateNavbarHeight = useCallback(() => {
     if (navbarRef.current) {
@@ -32,19 +35,34 @@ const Navbar: React.FC = () => {
         const offsetPosition =
           sectionPosition + window.pageYOffset - navbarHeight;
 
-        setIsMenuOpen(false);
-
-        setTimeout(() => {
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
-        }, 300); // Increased delay to allow for smoother animation
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
       } else {
         console.error(`Section with id "${id}" not found`);
       }
     },
     [navbarHeight]
+  );
+
+  const handleNavigation = useCallback(
+    (id: string) => {
+      setIsMenuOpen(false);
+
+      if (id === "committee") {
+        router.push("/committee");
+      } else {
+        if (pathname === "/committee") {
+          router.push("/");
+          // Use setTimeout to ensure the navigation has completed before scrolling
+          setTimeout(() => scrollToSection(id), 100);
+        } else {
+          scrollToSection(id);
+        }
+      }
+    },
+    [router, pathname, scrollToSection]
   );
 
   useEffect(() => {
@@ -76,7 +94,6 @@ const Navbar: React.FC = () => {
       },
     },
   };
-
   return (
     <nav ref={navbarRef} className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -110,20 +127,20 @@ const Navbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="hidden ">
+          <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-[0.95rem] font-medium transition-colors duration-200 active:bg-gray-200"
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item.id)}
                 >
                   {item.label}
                 </button>
               ))}
             </div>
           </div>
-          <div className="">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200"
@@ -150,7 +167,7 @@ const Navbar: React.FC = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className=" overflow-hidden"
+            className="overflow-hidden lg:hidden"
             onAnimationComplete={() => {
               updateNavbarHeight();
               if (menuRef.current) {
@@ -163,7 +180,7 @@ const Navbar: React.FC = () => {
                 <button
                   key={item.id}
                   className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium w-full text-left active:bg-gray-200"
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item.id)}
                 >
                   {item.label}
                 </button>
