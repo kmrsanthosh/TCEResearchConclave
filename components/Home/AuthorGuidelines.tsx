@@ -118,6 +118,13 @@ const AuthorGuidelines = () => {
             </motion.li>
           ))}
         </ul>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex bg-primary-accent mb-5 max-w-[300px] justify-center text-white font-semibold py-3 px-6 lg:w-[50%] mx-auto mt-5 md:mt-0 rounded-full hover:bg-opacity-90 transition duration-300"
+        >
+          Download Paper Template
+        </motion.button>
       </section>
     </>
   );
