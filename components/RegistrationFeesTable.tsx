@@ -84,8 +84,8 @@ const RegistrationFeesTable: React.FC = () => {
         >
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
           <p className="text-gray-600">
-            Payment of registration fee for Research Conclave 2025 can be made
-            through Website.
+            Please find the attached payment information to complete your
+            registration fee for Research Conclave 2025.{" "}
           </p>
         </motion.div>
       </div>
