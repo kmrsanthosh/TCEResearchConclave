@@ -7,6 +7,7 @@ export const navItems: NavItem[] = [
   { label: "Home", id: "home" },
   { label: "About", id: "about" },
   { label: "Call for Papers", id: "call-for-papers" },
+  { label: "Important Dates", id: "important-dates" },
   { label: "Author Guidelines", id: "author-guidelines" },
   { label: "Registration Details", id: "registration-details" },
   { label: "Committee", id: "committee" },
@@ -45,6 +46,13 @@ export interface TimelineElement {
   date: string;
   description: string;
 }
+
+export const paperSubmissions = [
+  "Read through Author Guidelines carefully & proceed with submission.",
+  "Paper should not exceed more than 6 pages.",
+  "Make sure to prepare the paper in the format prescribed. Click the link below to download the format.",
+  "Please click the link below (https://forms.gle/kwc4LLmbtjZZnxVV7), complete the registration by entering the correct details, and upload the appropriate payment receipt.",
+];
 
 export const guidelines = [
   "RC 2025 invites full-length original research contributions from professionals from industries, R&D organizations, academic institutions, government departments, and research scholars from across the country.",
