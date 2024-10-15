@@ -71,7 +71,6 @@ export const Footer: React.FC = () => {
               </Link>
               <p className="flex items-center mb-2">
                 <PhoneIcon className="h-5 w-5 mr-2" />
-                +91 123 456 7890
               </p>
               <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
                 <p className="flex items-center">
