@@ -48,7 +48,7 @@ export interface TimelineElement {
 
 export const guidelines = [
   "RC 2025 invites full-length original research contributions from professionals from industries, R&D organizations, academic institutions, government departments, and research scholars from across the country.",
-  "Full-length original research or review articles not exceeding __________ format shall be submitted.",
+  "Full-length original research or review articles not exceeding 6 pages shall be submitted.",
   "The manuscript should contain original research ideas, developmental ideas, analysis, findings, results, etc.",
   "The manuscript should not have been published in any journals/magazines or conference proceedings and should not be under review in any of them.",
   "Further, the manuscript should contain the names of the corresponding author and all other authors with e-mail id and affiliation.",
