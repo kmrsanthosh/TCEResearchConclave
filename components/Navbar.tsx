@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
           <div className="flex flex-shrink-0 flex-row space-x-2 md:space-x-7">
             <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px] ">
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <button
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200"
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
           opacity: isMenuOpen ? 1 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className="lg:hidden"
+        className="xl:hidden"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navItems.map((item) => (
