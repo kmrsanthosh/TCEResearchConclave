@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { CalendarDateRangeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface TimeLeft {
   days: number;
@@ -140,16 +141,22 @@ export const Hero = () => {
         >
           Register Now
         </motion.button> */}
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium hover:bg-opacity-90 transition duration-300"
+        <a
+          target="_blank"
+          href="https://forms.gle/kwc4LLmbtjZZnxVV7"
+          rel="noopener noreferrer"
         >
-          Register Now
-        </motion.button>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-primary-accent py-3 px-5 rounded-lg mb-8 text-sm sm:text-lg md:text-xl font-medium hover:bg-opacity-90 transition duration-300"
+          >
+            Register Now
+          </motion.button>
+        </a>
 
         {/* <motion.div
           initial={{ opacity: 0 }}
