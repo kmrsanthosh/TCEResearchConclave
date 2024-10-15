@@ -8,7 +8,9 @@ export const navItems: NavItem[] = [
   { label: "About", id: "about" },
   { label: "Call for Papers", id: "call-for-papers" },
   { label: "Registration Details", id: "registration-details" },
+  { label: "Committee", id: "committee" },
   { label: "Author Guidelines", id: "author-guidelines" },
+  { label: "Contact Us", id: "contact-us" },
 ];
 
 export const timelineData = [
