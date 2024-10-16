@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
   title: "TCE - Research Conclave' 25",
-  description: "Designed & Developed by Santhosh KMR & Shrinivas S",
+  description:
+    "Designed & Developed by Department of Computer Science and Business Systems",
 };
 export { metadata };
 
