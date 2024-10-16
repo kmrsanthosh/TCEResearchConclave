@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
   return (
     <nav ref={navbarRef} className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex flex-row lg:flex-col items-center justify-between py-4">
           <div className="flex flex-shrink-0 flex-row space-x-3 md:space-x-10">
             <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px]">
               <Image
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:mt-5">
             <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
                 <button
