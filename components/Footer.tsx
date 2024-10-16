@@ -1,10 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-} from "@heroicons/react/24/outline";
+import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 // const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 //   href,
