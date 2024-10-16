@@ -140,7 +140,7 @@ export const Hero = () => {
         >
           Register Now
         </motion.button> */}
-        <a
+        {/* <a
           target="_blank"
           href="https://forms.gle/kwc4LLmbtjZZnxVV7"
           rel="noopener noreferrer"
@@ -155,7 +155,7 @@ export const Hero = () => {
           >
             Register Now
           </motion.button>
-        </a>
+        </a> */}
 
         {/* <motion.div
           initial={{ opacity: 0 }}
