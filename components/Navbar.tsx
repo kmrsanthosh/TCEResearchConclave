@@ -126,20 +126,27 @@ const Navbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="hidden ">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden lg:block">
+            <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-[0.95rem] font-medium transition-colors duration-200 active:bg-gray-200"
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => {
+                    if (item.id !== "committee") {
+                      scrollToSection(item.id);
+                    } else {
+                      router.push("/committee");
+                      setIsMenuOpen(false);
+                    }
+                  }}
                 >
                   {item.label}
                 </button>
               ))}
             </div>
           </div>
-          <div className="">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200"
@@ -166,7 +173,7 @@ const Navbar: React.FC = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className=" overflow-hidden"
+            className=" overflow-hidden lg:hidden"
             onAnimationComplete={() => {
               updateNavbarHeight();
               if (menuRef.current) {
