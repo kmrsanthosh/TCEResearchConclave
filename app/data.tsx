@@ -51,7 +51,7 @@ export const paperSubmissions = [
   "Read through Author Guidelines carefully & proceed with submission.",
   "Paper should not exceed more than 6 pages.",
   "Make sure to prepare the paper in the format prescribed. Click the link below to download the format.",
-  "Please click the link below (https://forms.gle/kwc4LLmbtjZZnxVV7), complete the registration by entering the correct details, and upload the appropriate payment receipt.",
+  // "Please click the link below (https://forms.gle/kwc4LLmbtjZZnxVV7), complete the registration by entering the correct details, and upload the appropriate payment receipt.",
 ];
 
 export const guidelines = [
