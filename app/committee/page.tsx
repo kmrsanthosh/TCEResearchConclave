@@ -3,6 +3,7 @@ import React from "react";
 interface CommitteeMember {
   name: string;
   designation?: string;
+  committeeDesignation?: string;
 }
 
 interface Committee {
@@ -13,30 +14,36 @@ const chiefPatrons: CommitteeMember[] = [
   {
     name: "Mr. K. Hari Thiagarajan",
     designation: "Chairman & Correspondent, TCE",
+    committeeDesignation: "Chief Patron",
   },
   {
     name: "Dr. L. Ashok Kumar",
     designation: "Principal, TCE",
+    committeeDesignation: "Patron",
   },
   {
     name: "Dr. K. Hariharan",
     designation:
       "Organizing Secretary, Dean III, Professor, Department of Electronics and Communication Engineering",
+    committeeDesignation: "Organizing Secretary",
   },
   {
     name: "Dr. S. Charles Raja",
     designation:
       "Associate Dean (R&D), Associate Professor, Department of Electrical and Electronics Engineering",
+    committeeDesignation: "Organizing Secretary",
   },
   {
     name: "Dr. B. Ashok Kumar",
     designation:
       "CLC (III), Associate Professor, Department of Electrical and Electronics Engineering",
+    committeeDesignation: "Coordinator",
   },
   {
     name: "Ms. M. Aruna",
     designation:
       "CLC (R&D), Assistant Professor, Department of Civil Engineering",
+    committeeDesignation: "Coordinator",
   },
 ];
 
@@ -246,7 +253,9 @@ const page = () => {
                 key={index}
                 className="flex flex-col items-center justify-center space-y-2 text-center text-white bg-[#9a0101] rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
               >
-                <h2 className="text-2xl font-bold">Chief Patron</h2>
+                <h2 className="text-2xl font-bold">
+                  {patron.committeeDesignation}
+                </h2>
                 <h1 className="text-xl font-semibold">{patron.name}</h1>
                 <p className="text-sm text-gray-300">{patron.designation}</p>
               </div>
