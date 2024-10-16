@@ -69,9 +69,9 @@ export const Footer: React.FC = () => {
                   TCE, Thiruparankundram, Madurai
                 </p>
               </Link>
-              <p className="flex items-center mb-2">
+              {/* <p className="flex items-center mb-2">
                 <PhoneIcon className="h-5 w-5 mr-2" />
-              </p>
+              </p> */}
               <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
                 <p className="flex items-center">
                   <EnvelopeIcon className="h-5 w-5 mr-2" />
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             </address>
           </FooterSection>
 
-          <FooterSection title="Connect With Us">
+          {/* <FooterSection title="Connect With Us">
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/TheOfficialTCEPage"
@@ -152,7 +152,7 @@ export const Footer: React.FC = () => {
                 </svg>
               </Link>
             </div>
-          </FooterSection>
+          </FooterSection> */}
         </div>
 
         <div className="mt-8 pt-8 border-t border-white-700 text-center text-sm text-white/80">
