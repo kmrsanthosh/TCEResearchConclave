@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-shrink-0 flex-row space-x-3 md:space-x-10">
             <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px]">
               <Image
-                src="/assets/logos/TCE-Logo.svg"
+                src="/TCEResearchConclave/assets/logos/TCE-Logo.svg"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="relative w-[95px] h-[40px] md:h-[70px] md:w-[170px]">
               <Image
-                src="/assets/logos/iiclogo.webp"
+                src="/TCEResearchConclave/assets/logos/iiclogo.webp"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
-                src="/assets/logos/NAAC_LOGO.png"
+                src="/TCEResearchConclave/assets/logos/NAAC_LOGO.png"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
