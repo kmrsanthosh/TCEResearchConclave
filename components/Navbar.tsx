@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   const scrollToSection = useCallback(
     (id: string) => {
-      const isCommitteePage = pathname === "/committee";
+      const isCommitteePage = pathname === "/TCEResearchConclave/committee";
 
       const performScroll = () => {
         const section = document.getElementById(id);
