@@ -8,9 +8,9 @@ interface FeeEntry {
 }
 
 const feeData: FeeEntry[] = [
-  { category: "Student (UG/PG)", fee: "Rs. 4000 /-" },
-  { category: "Research Scholar", fee: "Rs. 5000 /-" },
-  { category: "Faculty Members", fee: "Rs. 6000 /-" },
+  { category: "Student (UG/PG)", fee: "Rs. 500 /-" },
+  { category: "Research Scholar", fee: "Rs. 750 /-" },
+  { category: "Faculty Members", fee: "Rs. 1000 /-" },
 ];
 
 const RegistrationFeesTable: React.FC = () => {
