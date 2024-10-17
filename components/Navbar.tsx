@@ -105,6 +105,7 @@ const Navbar: React.FC = () => {
                 layout="fill"
                 objectFit="cover"
                 priority
+                unoptimized
               />
             </div>
             <div className="relative w-[95px] h-[40px] md:h-[70px] md:w-[170px]">
@@ -114,6 +115,7 @@ const Navbar: React.FC = () => {
                 layout="fill"
                 objectFit="cover"
                 priority
+                unoptimized
               />
             </div>
             <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
@@ -123,6 +125,7 @@ const Navbar: React.FC = () => {
                 layout="fill"
                 objectFit="cover"
                 priority
+                unoptimized
               />
             </div>
           </div>

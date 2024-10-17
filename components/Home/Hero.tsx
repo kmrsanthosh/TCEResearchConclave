@@ -63,6 +63,7 @@ export const Hero = () => {
         objectFit="cover"
         className="blur-sm"
         priority={true}
+        unoptimized
       />
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 backdrop-blur-sm" /> */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/70 backdrop-blur-[1px] " />
