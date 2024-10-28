@@ -35,7 +35,7 @@ const About = () => {
           Curriculum and Outcome-Based Education. Since 2018, TCE has adopted
           the Conceive Design Implement Operate (CDIO) framework, shaping
           curriculum design, pedagogical methods, and assessment techniques,
-          with adequate hands-on training for students. The institution's
+          with adequate hands-on training for students. The institution&apos;s
           programs have been accredited by NBA since 1998, indicating compliance
           with quality standards in technical education. The programmes offered
           at the institution has garnered numerous accolades, including

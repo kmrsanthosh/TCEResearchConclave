@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import React from "react";
 interface CommitteeMember {
   name: string;
