@@ -17,7 +17,7 @@ export const navItems: NavItem[] = [
 export const timelineData = [
   {
     id: 1,
-    title: "Full Paper Submission",
+    title: "Last date for submission of full paper",
     date: "2025-04-10",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio euismod lacinia at quis risus sed vulputate odio ut. Quam viverra orci sagittis eu volutpat odio facilisis mauris.",
@@ -86,16 +86,16 @@ export const topics1 = [
       "Intelligent Transportation Systems",
     ],
   },
-  {
-    title: "Sustainable Materials and Manufacturing",
-    subtopics: [
-      "Sustainable Materials Science",
-      "Green Manufacturing and Supply Chain",
-      "Circular Economy and Waste Management",
-      "Biodegradable Materials and Packaging",
-      "Sustainable Textiles and Fashion",
-    ],
-  },
+  // {
+  //   title: "Sustainable Materials and Manufacturing",
+  //   subtopics: [
+  //     "Sustainable Materials Science",
+  //     "Green Manufacturing and Supply Chain",
+  //     "Circular Economy and Waste Management",
+  //     "Biodegradable Materials and Packaging",
+  //     "Sustainable Textiles and Fashion",
+  //   ],
+  // },
   {
     title: "Digital Sustainability and Transformation",
     subtopics: [
@@ -107,7 +107,27 @@ export const topics1 = [
     ],
   },
   {
-    title: "Digital Sustainability and Transformation",
+    title: "Advanced Materials and Manufacturing",
+    subtopics: [
+      "Green IT and Computing",
+      "Digitalization for Sustainability",
+      "Artificial Intelligence for Environmental Sustainability",
+      "Cyber-Physical Systems for Sustainable Infrastructure",
+      "Blockchain for Sustainable Supply Chain",
+    ],
+  },
+  {
+    title: "Communication Technologies ",
+    subtopics: [
+      "Green IT and Computing",
+      "Digitalization for Sustainability",
+      "Artificial Intelligence for Environmental Sustainability",
+      "Cyber-Physical Systems for Sustainable Infrastructure",
+      "Blockchain for Sustainable Supply Chain",
+    ],
+  },
+  {
+    title: "Smart and Intelligent Vehicles ",
     subtopics: [
       "Green IT and Computing",
       "Digitalization for Sustainability",
@@ -119,7 +139,7 @@ export const topics1 = [
 ];
 export const topics2 = [
   {
-    title: "Humanities and Social Sustainability",
+    title: "Artificial Intelligence / Machine Learning ",
     subtopics: [
       "Sustainable Development and Policy",
       "Environmental Economics and Management",
@@ -129,7 +149,7 @@ export const topics2 = [
     ],
   },
   {
-    title: "Health and Wellbeing Sustainability",
+    title: "Climate and Remote Sensing",
     subtopics: [
       "Healthcare and Medical Technology",
       "Public Health and Epidemiology",
@@ -139,7 +159,7 @@ export const topics2 = [
     ],
   },
   {
-    title: "Innovation and Entrepreneurship for Sustainability",
+    title: "Data and Computational Techniques",
     subtopics: [
       "Sustainable Business Models",
       "Green Entrepreneurship and Startups",
@@ -149,7 +169,17 @@ export const topics2 = [
     ],
   },
   {
-    title: "Cross-Thematic Areas",
+    title: "Agriculture and Healthcare",
+    subtopics: [
+      "Sustainable Agriculture and Food Systems",
+      "Disaster Risk Reduction and Management",
+      "Sustainable Tourism and Hospitality",
+      "Education for Sustainable Development",
+      "Sustainable Policy and Governance",
+    ],
+  },
+  {
+    title: "Networking IoT and Embedded Systems",
     subtopics: [
       "Sustainable Agriculture and Food Systems",
       "Disaster Risk Reduction and Management",
