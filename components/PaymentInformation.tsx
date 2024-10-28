@@ -10,7 +10,7 @@ const PaymentInformation: React.FC = () => {
         Payment Information
       </h2>
 
-      <div className="mt-8 space-y-4">
+      <div className="mt-8 space-y-4 text-justify">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

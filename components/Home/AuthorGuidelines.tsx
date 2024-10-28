@@ -72,7 +72,7 @@ const AuthorGuidelines = () => {
 
       {/* Version 3 */}
 
-      <section className="max-w-7xl mx-auto mt-16 bg-white ">
+      <section className="max-w-7xl mx-auto mt-16 bg-white text-justify ">
         <h1 className="font-bold text-center text-primary-accent text-5xl mb-2">
           Guidelines
         </h1>
@@ -96,7 +96,7 @@ const AuthorGuidelines = () => {
         </ul>
       </section>
 
-      <section className="max-w-7xl mx-auto mt-5 bg-white ">
+      <section className="max-w-7xl mx-auto mt-5 bg-white text-justify">
         <h1 className="font-bold text-center text-primary-accent text-5xl mb-2">
           Paper Submissions
         </h1>
