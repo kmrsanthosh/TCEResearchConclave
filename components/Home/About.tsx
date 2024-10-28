@@ -21,23 +21,31 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Thiagarajar College of Engineering (TCE), Madurai, Tamilnadu
-          established in 1957, is an autonomous institution affiliated to Anna
-          University, Chennai. It is one among the several educational and
-          philanthropic institutions founded by Philanthropist and Industrialist
-          Late. Shri.Karumuttu Thiagarajan Chettiar. TCE offers 9 Undergraduate
-          Programmes, 10 Postgraduate Programmes, and Doctoral Programmes in
-          Engineering, Science, and Architecture.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          The UG and PG programmes of TCE are accredited by the National Board
-          of Accreditation. TCE is ranked 85th among the top 200 engineering
-          institutions in India in the National Institutional Ranking Framework
-          published by MHRD, Govt. of India in 2022.
+          Thiagarajar College of Engineering (TCE) is a Government Aided
+          Autonomous Institution, established in 1957 by the philanthropist Late
+          Karumuttu Thiagarajan Chettiar. TCE is affiliated with Anna
+          University, Chennai, and approved by the All India Council for
+          Technical Education (AICTE). TCE offers a wide array of Undergraduate,
+          Postgraduate and PhD Programs across various disciplines of
+          Engineering, Architecture and Science. The campus is set within a
+          serene and eco-friendly environment surrounded by dense vegetation and
+          the best infrastructure facilities. TCE has consistently embraced
+          reforms and upgrades in its Teaching-Learning processes. Noteworthy
+          initiatives include the implementation of a Competency-Based
+          Curriculum and Outcome-Based Education. Since 2018, TCE has adopted
+          the Conceive Design Implement Operate (CDIO) framework, shaping
+          curriculum design, pedagogical methods, and assessment techniques,
+          with adequate hands-on training for students. The institution's
+          programs have been accredited by NBA since 1998, indicating compliance
+          with quality standards in technical education. The programmes offered
+          at the institution has garnered numerous accolades, including
+          accreditation by NAAC with a CGPA of 3.56 (out of 4.0) with A++ Grade
+          in Cycle 2. The institution launched Massive Open Online Courses
+          (MOOCs) in 2021 and introduced the Thiagarajar Research Fellowship
+          (TRF) scheme for PhD research scholars, furthering its commitment to
+          academic excellence and research innovation. In 2024, the Institute
+          received a Platinum Certificate in 5S Audit for having a clean and
+          sustainable campus.{" "}
         </motion.p>
       </div>
 
@@ -57,14 +65,17 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          The Research Conclave 2025, themed &quot;Advancing towards a Resilient
-          Future,&quot; convenes visionary leaders, innovators, and scholars to
-          explore transformative solutions for sustainable development. This
-          premier gathering facilitates cross-sectoral dialogue, knowledge
-          sharing, and collaboration to address environmental, social, and
-          economic challenges. Through keynote addresses, panel discussions and
-          research presentations, participants will delve into cutting-edge
-          themes. Join us in shaping a sustainable tomorrow.
+          The Research Conclave 2025, themed &quote;Sustainability: Advancing
+          towards a Resilient Future&quote; convenes visionary leaders,
+          innovators, and scholars to explore transformative solutions for
+          sustainable development. This premier gathering facilitates
+          cross-sectoral dialogue, knowledge sharing, and collaboration to
+          address environmental, social, and economic challenges. Through
+          keynote addresses, panel discussions and research presentations,
+          participants will delve into cutting-edge themes. The Research
+          conclave comprises keynote addresses, panel discussions, and
+          presentations by Research scholars, Undergraduate and Postgraduate
+          students and Faculty Members on cutting-edge themes.
         </motion.p>
       </div>
     </section>
