@@ -7,6 +7,7 @@ export const navItems: NavItem[] = [
   { label: "Home", id: "home" },
   { label: "About", id: "about" },
   { label: "Call for Papers", id: "call-for-papers" },
+  { label: "Keynote Speakers", id: "keynote-speakers" },
   { label: "Important Dates", id: "important-dates" },
   { label: "Author Guidelines", id: "author-guidelines" },
   { label: "Registration Details", id: "registration-details" },
