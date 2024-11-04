@@ -64,7 +64,7 @@ const RegistrationFeesTable: React.FC = () => {
             A bonafide certificate is needed for external participants.
           </p>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -75,7 +75,7 @@ const RegistrationFeesTable: React.FC = () => {
             No registration fee for UG/PG/PhD Scholars from Thiagarajar College
             of Engineering, Madurai.
           </p>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
