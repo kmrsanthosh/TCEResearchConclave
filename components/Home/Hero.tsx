@@ -20,7 +20,7 @@ export const Hero = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-05-17T00:00:00");
+    const targetDate = new Date("2025-05-16T00:00:00");
 
     const calculateTimeLeft = () => {
       const difference = +targetDate - +new Date();
@@ -95,7 +95,7 @@ export const Hero = () => {
         >
           <CalendarDateRangeIcon className="w-5 md:w-8 h-5 md:h-8 mr-3" />
           <span className="text-sm sm:text-lg md:text-xl font-semibold">
-            May 17-18, 2025
+            May 16 - 17, 2025
           </span>
         </motion.div>
 
