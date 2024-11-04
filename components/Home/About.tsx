@@ -65,8 +65,8 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          The Research Conclave 2025, themed &quote;Sustainability: Advancing
-          towards a Resilient Future&quote; convenes visionary leaders,
+          The Research Conclave 2025, themed &quot;Sustainability: Advancing
+          towards a Resilient Future&quot; convenes visionary leaders,
           innovators, and scholars to explore transformative solutions for
           sustainable development. This premier gathering facilitates
           cross-sectoral dialogue, knowledge sharing, and collaboration to
