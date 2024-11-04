@@ -95,7 +95,7 @@ const PaymentInformation: React.FC = () => {
               href={"https://forms.gle/kwc4LLmbtjZZnxVV7"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center text-blue-600 hover:text-blue-800 break-all whitespace-normal"
             >
               (https://forms.gle/kwc4LLmbtjZZnxVV7)
               <ExternalLink className="ml-1 h-4 w-4" />
