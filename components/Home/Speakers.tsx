@@ -42,6 +42,20 @@ const speakersData: Speaker[] = [
     imagePlaceholder:
       "https://media.licdn.com/dms/image/v2/D5603AQEXE8uM762rrA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725727903855?e=1735776000&v=beta&t=3srFCg7BynsYx5lQ86dOWJyG1vBoBf6_nVft3ChLTNE",
   },
+  {
+    name: "Dr. Y. Dhiyaneshwaran",
+    title: "R&D Head",
+    organization: "Lakshmi Machine Works Limited, Coimbatore",
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr. B. Somasundaram",
+    title: "Head - Digital Transformation",
+    organization: "ELGI Equipments Limited",
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
 ];
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
