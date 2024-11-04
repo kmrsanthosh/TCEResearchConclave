@@ -189,6 +189,16 @@ export const topics2 = [
       "Sustainable Policy and Governance",
     ],
   },
+  {
+    title: "Sustainability: Advancing towards the Resilient future",
+    subtopics: [
+      "Sustainable Agriculture and Food Systems",
+      "Disaster Risk Reduction and Management",
+      "Sustainable Tourism and Hospitality",
+      "Education for Sustainable Development",
+      "Sustainable Policy and Governance",
+    ],
+  },
 ];
 
 export interface RegistrationStep {
