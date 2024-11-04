@@ -54,7 +54,7 @@ export const Hero = () => {
     // <section className="relative h-[calc(100vh-95px)] overflow-hidden">
     <section
       id="home"
-      className="relative md:h-[calc(100vh-95px)] h-[calc(100vh-80px)] overflow-hidden"
+      className="relative md:h-[calc(100vh-0px)] h-[calc(100vh-80px)] overflow-hidden"
     >
       <Image
         src="/TCEResearchConclave/assets/images/TCE-Main-Building.webp"
@@ -77,7 +77,7 @@ export const Hero = () => {
         >
           Thiagarajar College of Engineering
           <br />
-          <span className="text-xs md:text-sm tracking-[4px]">
+          <span className="text-[0.6rem] md:text-sm tracking-[0px] md:tracking-[4px]">
             (A Govt. Aided Autonomous Institution, Affiliated to Anna
             University)
           </span>
@@ -92,6 +92,10 @@ export const Hero = () => {
           className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 text-center"
         >
           Research Conclave 2025
+          <br />
+          <span className="text-[0.7rem] md:text-lg tracking-[0px] md:tracking-[2px]">
+            Theme: Sustainability: Advancing towards the Resilient future
+          </span>
         </motion.h1>
 
         <motion.div
