@@ -76,6 +76,13 @@ export const Hero = () => {
           className=" text-center md:text-2xl font-bold tracking-[5px] md:tracking-[8px] uppercase mb-8"
         >
           Thiagarajar College of Engineering
+          <br />
+          <span className="text-xs md:text-sm tracking-[4px]">
+            (A Govt. Aided Autonomous Institution, Affiliated to Anna
+            University)
+          </span>
+          <br />
+          <span className="md:text-sm tracking-[4px]">Madurai - 625015</span>
         </motion.h2>
 
         <motion.h1
