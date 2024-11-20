@@ -19,21 +19,21 @@ export const timelineData = [
   {
     id: 1,
     title: "Last date for submission of full paper",
-    date: "2025-04-10",
+    date: "2025-02-10",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio euismod lacinia at quis risus sed vulputate odio ut. Quam viverra orci sagittis eu volutpat odio facilisis mauris.",
   },
   {
     id: 2,
     title: "Acceptance notification",
-    date: "2025-05-02",
+    date: "2025-02-25",
     description:
       "Aut eius excepturi ex recusandae eius est minima molestiae. Nam dolores iusto ad fugit reprehenderit hic dolorem quisquam et quia omnis non suscipit nihil sit libero distinctio. Ad dolorem tempora sit nostrum voluptatem qui tempora unde? Sit rerum magnam nam ipsam nesciunt aut rerum necessitatibus est quia esse non magni quae.",
   },
   {
     id: 3,
     title: "Final submission",
-    date: "2025-05-09",
+    date: "2025-03-10",
     description:
       "Sit culpa quas ex nulla animi qui deleniti minus rem placeat mollitia. Et enim doloremque et quia sequi ea dolores voluptatem ea rerum vitae. Aut itaque incidunt est aperiam vero sit explicabo fuga id optio quis et molestiae nulla ex quae quam. Ab eius dolores ab tempora dolorum eos beatae soluta At ullam placeat est incidunt cumque.",
   },

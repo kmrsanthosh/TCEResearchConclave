@@ -65,18 +65,53 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          The Research Conclave 2025, themed &quot;Sustainability: Advancing
-          towards a Resilient Future&quot; convenes visionary leaders,
-          innovators, and scholars to explore transformative solutions for
-          sustainable development. This premier gathering facilitates
-          cross-sectoral dialogue, knowledge sharing, and collaboration to
-          address environmental, social, and economic challenges. Through
-          keynote addresses, panel discussions and research presentations,
-          participants will delve into cutting-edge themes. The Research
-          conclave comprises keynote addresses, panel discussions, and
-          presentations by Research scholars, Undergraduate and Postgraduate
-          students and Faculty Members on cutting-edge themes.
+          The Research Conclave 2025 invites thought leaders, innovators,
+          researchers, and scholars from across the globe to gather and address
+          the urgent need for sustainable solutions. With the theme
+          &quot;Sustainability: Advancing towards a Resilient Future,&quot; this
+          event serves as a platform for collaborative exploration and
+          actionable solutions for pressing environmental, social, and economic
+          challenges.
         </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="font-bold text-2xl pt-5 text-primary-accent"
+        >
+          Highlights of the Conclave
+        </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="space-y-4 "
+        >
+          <ul className="list-disc pl-6 space-y-3 text-gray-700">
+            <li>
+              <strong className="font-medium">Keynote Addresses:</strong>{" "}
+              Featuring renowned experts and pioneers in sustainability, energy,
+              and resilience. These thought-provoking speeches will set the tone
+              for innovative approaches to a sustainable future.
+            </li>
+            <li>
+              <strong className="font-medium">Panel Discussions:</strong>{" "}
+              Multi-disciplinary panels will engage in dialogue on current
+              sustainability challenges, from climate change adaptation and
+              green technology to ethical economic development and community
+              resilience.
+            </li>
+            <li>
+              <strong className="font-medium">Research Presentations:</strong>{" "}
+              An opportunity for Research Scholars, Undergraduate, Postgraduate
+              students, and Faculty Members to showcase their groundbreaking
+              work. These presentations span across diverse themes including
+              renewable energy, sustainable agriculture, smart cities, waste
+              management, social equity, and more.
+            </li>
+          </ul>
+        </motion.div>
       </div>
     </section>
   );

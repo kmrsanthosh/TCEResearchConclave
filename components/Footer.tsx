@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { PhoneCall, User2 } from "lucide-react";
 
 // const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 //   href,
@@ -55,25 +56,53 @@ export const Footer: React.FC = () => {
           </FooterSection> */}
 
           <FooterSection title="Contact Us">
-            <address className="text-sm text-white not-italic">
-              <Link
-                prefetch={false}
-                href={"https://maps.app.goo.gl/rJkd5gBVnGYDiTCK9"}
-              >
-                <p className="flex items-center mb-2">
-                  <MapPinIcon className="h-5 w-5 mr-2" />
-                  TCE, Thiruparankundram, Madurai
-                </p>
-              </Link>
-              {/* <p className="flex items-center mb-2">
+            <address className="text-sm flex flex-row space-x-5 text-white not-italic">
+              <div>
+                <Link prefetch={false} href={"tel:9095555066"}>
+                  <p className="flex items-center mb-2">
+                    <User2 className="h-5 w-5 mr-2" />
+                    Dr. B. Ashok Kumar
+                  </p>
+                </Link>
+                {/* <p className="flex items-center mb-2">
                 <PhoneIcon className="h-5 w-5 mr-2" />
               </p> */}
-              <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
-                <p className="flex items-center">
-                  <EnvelopeIcon className="h-5 w-5 mr-2" />
-                  rctce@tce.edu
-                </p>
-              </Link>
+                <Link href={"tel:9095555066"} prefetch={false}>
+                  <p className="flex items-center mb-2">
+                    <PhoneCall className="h-5 w-5 mr-2" />
+                    9095555066
+                  </p>
+                </Link>
+                <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
+                  <p className="flex items-center">
+                    <EnvelopeIcon className="h-5 w-5 mr-2" />
+                    rctce@tce.edu
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <Link prefetch={false} href={"tel:9787781194"}>
+                  <p className="flex items-center mb-2">
+                    <User2 className="h-5 w-5 mr-2" />
+                    Ms. M. Aruna
+                  </p>
+                </Link>
+                {/* <p className="flex items-center mb-2">
+                <PhoneIcon className="h-5 w-5 mr-2" />
+              </p> */}
+                <Link href={"tel:9787781194"} prefetch={false}>
+                  <p className="flex items-center mb-2">
+                    <PhoneCall className="h-5 w-5 mr-2 " />
+                    9787781194
+                  </p>
+                </Link>
+                <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
+                  <p className="flex items-center">
+                    <EnvelopeIcon className="h-5 w-5 mr-2" />
+                    rctce@tce.edu
+                  </p>
+                </Link>
+              </div>
             </address>
           </FooterSection>
 

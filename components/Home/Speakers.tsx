@@ -17,7 +17,29 @@ interface SpeakerCardProps {
 
 const speakersData: Speaker[] = [
   {
-    name: "Harshitha Phaniraj",
+    name: "Mr. K. Sridhar",
+    title: "",
+    organization: "Amazon, USA",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Mr. Suresh Rajappa",
+    title: "",
+    organization: "KPMG, USA",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Ms. Harshitha Phaniraj",
     title: "Senior Manager, Security Operations Center & Brand Monitoring",
     organization: "Titan Company, Integrity Office, Bangalore",
     credentials: [
@@ -26,6 +48,83 @@ const speakersData: Speaker[] = [
     ],
     imagePlaceholder:
       "https://cdn.theorg.com/ff1c2141-93ff-481a-b28b-2e0eb1396d1e_thumb.jpg",
+  },
+  {
+    name: "Mr. N. G. Karthikeyan",
+    title: "",
+    organization: "TaxNodes, Bangalore",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr. Manivel Raja Muthuraja",
+    title: "",
+    organization: "DRDO, Ministry of Defence, Hyderabad",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr. N. Anandavalli",
+    title: "",
+    organization: "CSIR- Structural Engineering Research Centre, Chennai",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr. B. Somasundaram",
+    title: "",
+    organization: "ELGI Equipment Limited, Chennai",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr.M.Rajesh Pandian",
+    title: "",
+    organization: "Qualcomm, Chennai",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Dr. Y. Uma Maheswari",
+    title: "",
+    organization: "Cognizant Technology Solutions, Coimbatore",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  },
+  {
+    name: "Mr. P. Bagavathy",
+    title: "",
+    organization: "Bosch Global Software Technologies, Coimbatore",
+    credentials: [
+      "Digital transformation and AI for Business Leaders from IIM-Lucknow",
+      "MS in Computing Science from Coventry University, UK",
+    ],
+    imagePlaceholder:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
   },
   {
     name: "Dr. Sabitha MS",
@@ -41,20 +140,6 @@ const speakersData: Speaker[] = [
     organization: "Aravind Eye Care System, Madurai",
     imagePlaceholder:
       "https://media.licdn.com/dms/image/v2/D5603AQEXE8uM762rrA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725727903855?e=1735776000&v=beta&t=3srFCg7BynsYx5lQ86dOWJyG1vBoBf6_nVft3ChLTNE",
-  },
-  {
-    name: "Dr. Y. Dhiyaneshwaran",
-    title: "R&D Head",
-    organization: "Lakshmi Machine Works Limited, Coimbatore",
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-  },
-  {
-    name: "Dr. B. Somasundaram",
-    title: "Head - Digital Transformation",
-    organization: "ELGI Equipments Limited",
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
   },
 ];
 
@@ -84,17 +169,17 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
 
       {/* Details section */}
       <div className="space-y-4">
-        <div className="flex items-start space-x-3">
+        {/* <div className="flex items-start space-x-3">
           <User className="w-5 h-5 mt-1 text-[#830000]" />
           <p className="text-gray-700 font-medium flex-1">{speaker.title}</p>
-        </div>
+        </div> */}
 
         <div className="flex items-start space-x-3">
           <Building2 className="w-5 h-5 mt-1 text-[#830000]" />
           <p className="text-gray-600 flex-1">{speaker.organization}</p>
         </div>
 
-        {speaker.credentials && (
+        {/* {speaker.credentials && (
           <div className="flex items-start space-x-3">
             <GraduationCap className="w-5 h-5 mt-1 text-[#830000]" />
             <ul className="list-none space-y-2 flex-1">
@@ -105,7 +190,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
               ))}
             </ul>
           </div>
-        )}
+        )} */}
 
         {speaker.address && (
           <div className="flex items-start space-x-3">

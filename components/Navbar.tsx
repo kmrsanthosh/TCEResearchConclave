@@ -119,9 +119,19 @@ const Navbar: React.FC = () => {
                 unoptimized
               />
             </div>
-            <div className="relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+            <div className="hidden md:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
                 src="/TCEResearchConclave/assets/logos/NAAC_LOGO.png"
+                alt="TCE Logo"
+                layout="fill"
+                objectFit="cover"
+                priority
+                unoptimized
+              />
+            </div>
+            <div className="hidden md:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+              <Image
+                src="/TCEResearchConclave/assets/logos/5s.jpg"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"

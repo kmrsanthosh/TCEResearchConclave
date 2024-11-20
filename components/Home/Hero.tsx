@@ -91,7 +91,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-8 text-center"
         >
-          Research Conclave 2025
+          National Level Research Conclave 2025
           <br />
           <span className="text-[0.7rem] md:text-lg tracking-[0px] md:tracking-[2px]">
             Theme: Sustainability: Advancing towards the Resilient future
