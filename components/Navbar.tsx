@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden sm:block sm:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/5s.jpg"
+                src="/TCEResearchConclave/assets/logos/5S.jpg"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
