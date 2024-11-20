@@ -55,6 +55,11 @@ export const paperSubmissions = [
   // "Please click the link below (https://forms.gle/kwc4LLmbtjZZnxVV7), complete the registration by entering the correct details, and upload the appropriate payment receipt.",
 ];
 
+export const publication = [
+  "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology*",
+  "Best Paper Award for every session* Additional fee applicable",
+];
+
 export const guidelines = [
   "RC 2025 invites full-length original research contributions from professionals from industries, R&D organizations, academic institutions, government departments, and research scholars from across the country.",
   "Full-length original research or review articles not exceeding 6 pages shall be submitted.",
