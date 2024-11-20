@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { PhoneCall, User2 } from "lucide-react";
 
 // const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({

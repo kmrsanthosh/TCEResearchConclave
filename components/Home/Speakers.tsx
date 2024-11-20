@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
-import { User, Building2, MapPin, GraduationCap } from "lucide-react";
+import { Building2, MapPin } from "lucide-react";
 
 interface Speaker {
   name: string;
