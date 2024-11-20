@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
                 unoptimized
               />
             </div>
-            <div className="hidden md:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+            <div className="hidden sm:block sm:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
                 src="/TCEResearchConclave/assets/logos/NAAC_LOGO.png"
                 alt="TCE Logo"
@@ -129,9 +129,19 @@ const Navbar: React.FC = () => {
                 unoptimized
               />
             </div>
-            <div className="hidden md:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
+            <div className="hidden sm:block sm:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
                 src="/TCEResearchConclave/assets/logos/5s.jpg"
+                alt="TCE Logo"
+                layout="fill"
+                objectFit="cover"
+                priority
+                unoptimized
+              />
+            </div>
+            <div className="hidden lg:block lg:relative w-[40px] h-[40px] md:h-[70px] md:w-[110px]">
+              <Image
+                src="/TCEResearchConclave/assets/logos/NIRF.png"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
