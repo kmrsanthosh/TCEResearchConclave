@@ -18,33 +18,22 @@ const PaymentInformation: React.FC = () => {
           className="flex items-start bg-white p-4 rounded-lg shadow"
         >
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
-          <p className="text-gray-600">
-            Please note that the registration fee should be paid exclusively
-            through the provided portal:{" "}
-            <Link
-              href={"https://eazypay.icicibank.com/"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
-            >
-              eazypay.icicibank.com
-              <ExternalLink className="ml-1 h-4 w-4" />
-            </Link>
+          <p className="text-gray-600 w-full">
+            All payments should be made by{" "}
+            <span className="font-bold">NEFT</span>
+            <br />
+            <span className="text-center w-full flex justify-center items-center">
+              Account Name : TCE Souvenir
+              <br />
+              Account Number : 601301902011
+              <br />
+              IFSC CODE : ICIC0000563
+              <br />
+              Branch : Madurai - TCE
+            </span>
           </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex items-start bg-white p-4 rounded-lg shadow"
-        >
-          <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
-          <p className="text-gray-600">
-            Type T C E with space (as mentioned&quot;T space C space E&quot;) in
-            the “Enter Institute Name” field and select the “TCE SOUVENIOR” from
-            the appearing drop down menu
-          </p>
-        </motion.div>
+
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

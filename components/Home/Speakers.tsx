@@ -129,7 +129,7 @@ const speakersData: Speaker[] = [
   {
     name: "Dr. Sabitha MS",
     title: "Head, Information systems",
-    organization: "TVS Sensing Solutions Private Limited",
+    organization: "TVS Sensing Solutions Private Limited, Madurai",
     // address: "Madurai-Melur Road, Vellaripatti, Madurai – 625122",
     imagePlaceholder:
       "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
