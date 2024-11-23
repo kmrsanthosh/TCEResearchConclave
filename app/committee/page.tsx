@@ -62,7 +62,7 @@ const committees: Committee[] = [
     title: "Finance Committee",
     members: [
       "Dr. S. Arockia Edwin Xavier",
-      "Mr. M. Sivakumar (Accounts)",
+      // "Mr. M. Sivakumar (Accounts)",
       // "Dr. R. Sankaranarayanan",
       // "Ms. Nisha Angelin",
       // "Mr. S. Rajkumar",
