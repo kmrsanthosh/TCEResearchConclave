@@ -40,6 +40,14 @@ const AnimatedTimeline: React.FC<AnimatedTimelineProps> = ({
   );
 };
 
+// Utility function to format date as DD/MM/YYYY
+const formatDate = (date: Date): string => {
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are zero-based
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+};
+
 // Sub-component for each timeline item to handle scroll animation
 const ScrollAnimatedTimelineItem: React.FC<{
   item: TimelineElement;
@@ -119,7 +127,7 @@ const ScrollAnimatedTimelineItem: React.FC<{
               isCompleted ? "text-emerald-500" : "text-amber-500"
             }`}
           >
-            {new Date(item.date).toLocaleDateString()}
+            {formatDate(new Date(item.date))}
           </time>
         </div>
         {/* <div className="text-slate-500">{item.description}</div> */}
