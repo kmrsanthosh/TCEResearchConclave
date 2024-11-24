@@ -179,7 +179,7 @@ const committees: Committee[] = [
       "Ms. S. Pudumalar (IT)",
       "Ms. P M Devie (EEE)",
       "Dr. M. Senthilarasi (ECE)",
-      "Mr. V. Janakiraman",
+      "Mr. V. Janakiraman (CSBS)",
       "Dr. M. Nirmala Devi (CSE)",
     ],
   },
