@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   return (
     <footer id="contact-us" className="bg-primary-accent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
           {/* <FooterSection title="About TCE">
             <p className="text-sm text-white text-justify">
               Thiagarajar College of Engineering (TCE) is a premier institution
@@ -56,46 +56,40 @@ export const Footer: React.FC = () => {
           </FooterSection> */}
 
           <FooterSection title="Contact Us">
-            <address className="text-sm flex flex-row space-x-5 text-white not-italic">
-              <div>
-                <Link prefetch={false} href={"tel:9095555066"}>
-                  <p className="flex items-center mb-2">
-                    <User2 className="h-5 w-5 mr-2" />
-                    Dr. B. Ashok Kumar
-                  </p>
-                </Link>
-                {/* <p className="flex items-center mb-2">
-                <PhoneIcon className="h-5 w-5 mr-2" />
-              </p> */}
-                <Link href={"tel:9095555066"} prefetch={false}>
-                  <p className="flex items-center mb-2">
-                    <PhoneCall className="h-5 w-5 mr-2" />
-                    9095555066
-                  </p>
-                </Link>
-                <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
-                  <p className="flex items-center">
-                    <EnvelopeIcon className="h-5 w-5 mr-2" />
-                    rctce@tce.edu
-                  </p>
-                </Link>
+            <address className="text-sm flex flex-col w-fit text-white not-italic">
+              <div className="flex flex-row space-x-5">
+                <div>
+                  <Link prefetch={false} href={"tel:9095555066"}>
+                    <p className="flex items-center mb-2">
+                      <User2 className="h-5 w-5 mr-2" />
+                      Dr. B. Ashok Kumar
+                    </p>
+                  </Link>
+                  <Link href={"tel:9095555066"} prefetch={false}>
+                    <p className="flex items-center mb-2">
+                      <PhoneCall className="h-5 w-5 mr-2" />
+                      9095555066
+                    </p>
+                  </Link>
+                </div>
+
+                <div>
+                  <Link prefetch={false} href={"tel:9787781194"}>
+                    <p className="flex items-center mb-2">
+                      <User2 className="h-5 w-5 mr-2" />
+                      Ms. M. Aruna
+                    </p>
+                  </Link>
+                  <Link href={"tel:9787781194"} prefetch={false}>
+                    <p className="flex items-center mb-2">
+                      <PhoneCall className="h-5 w-5 mr-2 " />
+                      9787781194
+                    </p>
+                  </Link>
+                </div>
               </div>
-              <div>
-                <Link prefetch={false} href={"tel:9787781194"}>
-                  <p className="flex items-center mb-2">
-                    <User2 className="h-5 w-5 mr-2" />
-                    Ms. M. Aruna
-                  </p>
-                </Link>
-                {/* <p className="flex items-center mb-2">
-                <PhoneIcon className="h-5 w-5 mr-2" />
-              </p> */}
-                <Link href={"tel:9787781194"} prefetch={false}>
-                  <p className="flex items-center mb-2">
-                    <PhoneCall className="h-5 w-5 mr-2 " />
-                    9787781194
-                  </p>
-                </Link>
+
+              <div className="flex justify-center">
                 <Link href={"mailto:rctce@tce.edu"} prefetch={false}>
                   <p className="flex items-center">
                     <EnvelopeIcon className="h-5 w-5 mr-2" />
