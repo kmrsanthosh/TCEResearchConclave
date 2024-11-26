@@ -93,7 +93,7 @@ export const Hero = () => {
         >
           National Level Research Conclave 2025
           <br />
-          <span className="text-[0.7rem] md:text-lg tracking-[0px] md:tracking-[2px]">
+          <span className="text-[0.7rem] sm:text-xl md:text-2xl lg:text-3xl tracking-[0px] md:tracking-[2px]">
             Theme: Sustainability: Advancing towards the Resilient future
           </span>
         </motion.h1>
