@@ -241,7 +241,7 @@ const page = () => {
 
       <div className="w-full bg-[#830101] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-8">
             {chiefPatrons.map((patron, index) => (
               <div
                 key={index}
