@@ -11,6 +11,7 @@ const feeData: FeeEntry[] = [
   { category: "Student (UG/PG)", fee: "Rs. 750 /-" },
   { category: "Research Scholar", fee: "Rs. 1000 /-" },
   { category: "Faculty Members", fee: "Rs. 1500 /-" },
+  { category: "Industry Delegates", fee: "Rs. 2000 /-" },
 ];
 
 const RegistrationFeesTable: React.FC = () => {
