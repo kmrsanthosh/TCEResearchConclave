@@ -35,8 +35,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    imagePlaceholder: "https://i.ibb.co/ctCG8v9/unnamed.png",
   },
   {
     name: "Ms. Harshitha Phaniraj",
@@ -57,8 +56,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    imagePlaceholder: "https://i.ibb.co/5cBD5zz/unnamed.png",
   },
   {
     name: "Dr. Manivel Raja Muthuraja",
@@ -90,8 +88,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    imagePlaceholder: "https://i.ibb.co/YR2p7K0/unnamed.png",
   },
   {
     name: "Dr.M.Rajesh Pandian",
@@ -101,8 +98,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    imagePlaceholder: "https://i.ibb.co/rMc4B9w/unnamed.png",
   },
   {
     name: "Dr. Y. Uma Maheswari",
@@ -131,8 +127,7 @@ const speakersData: Speaker[] = [
     title: "Head, Information systems",
     organization: "TVS Sensing Solutions Private Limited, Madurai",
     // address: "Madurai-Melur Road, Vellaripatti, Madurai – 625122",
-    imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    imagePlaceholder: "https://i.ibb.co/6DQbYbG/unnamed.png",
   },
   {
     name: "Mr. Srinivasulu Thayam",
