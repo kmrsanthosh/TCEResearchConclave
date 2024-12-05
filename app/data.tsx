@@ -57,7 +57,7 @@ export const paperSubmissions = [
 
 export const publication = [
   "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology*",
-  "Best Paper Award for every session* Additional fee applicable",
+  "Best Paper Award for every session",
 ];
 
 export const guidelines = [

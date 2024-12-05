@@ -148,6 +148,10 @@ const AuthorGuidelines = () => {
               <p className="text-gray-600">{guideline}</p>
             </motion.li>
           ))}
+
+          <p className="text-gray-600 ml-10">
+            *Additional fee applicable for paper publications
+          </p>
         </ul>
       </section>
     </>
