@@ -9,7 +9,7 @@ interface Committee {
   title: string;
   members: string[];
 }
-const chiefPatrons: CommitteeMember[] = [
+const Patrons: CommitteeMember[] = [
   {
     name: "Mr. K. Hari Thiagarajan",
     designation: "Chairman & Correspondent, TCE",
@@ -20,6 +20,8 @@ const chiefPatrons: CommitteeMember[] = [
     designation: "Principal, TCE",
     committeeDesignation: "Patron",
   },
+];
+const OrganizingSecretary: CommitteeMember[] = [
   {
     name: "Dr. K. Hariharan",
     designation:
@@ -32,6 +34,8 @@ const chiefPatrons: CommitteeMember[] = [
       "Associate Dean (R&D), Associate Professor, Department of Electrical and Electronics Engineering",
     committeeDesignation: "Organizing Secretary",
   },
+];
+const Coordinators: CommitteeMember[] = [
   {
     name: "Dr. B. Ashok Kumar",
     designation:
@@ -242,7 +246,7 @@ const page = () => {
       <div className="w-full bg-[#830101] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-8">
-            {chiefPatrons.map((patron, index) => (
+            {Patrons.map((patron, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center justify-center space-y-2 text-center text-white bg-[#9a0101] rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
@@ -250,6 +254,46 @@ const page = () => {
                 <h2 className="text-2xl font-bold">
                   {patron.committeeDesignation}
                 </h2>
+                <h1 className="text-xl font-semibold">{patron.name}</h1>
+                <p className="text-sm text-gray-300">{patron.designation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <h2 className="w-full bg-[#830101] text-4xl font-bold text-white text-center py-1">
+        Organizing Secretary
+      </h2>
+
+      <div className="w-full bg-[#830101] shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-8">
+            {OrganizingSecretary.map((patron, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center space-y-2 text-center text-white bg-[#9a0101] rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <h1 className="text-xl font-semibold">{patron.name}</h1>
+                <p className="text-sm text-gray-300">{patron.designation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <h2 className="w-full bg-[#830101] text-4xl font-bold text-white text-center py-1">
+        Coordinators
+      </h2>
+
+      <div className="w-full bg-[#830101] shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-8">
+            {Coordinators.map((patron, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center space-y-2 text-center text-white bg-[#9a0101] rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
                 <h1 className="text-xl font-semibold">{patron.name}</h1>
                 <p className="text-sm text-gray-300">{patron.designation}</p>
               </div>
