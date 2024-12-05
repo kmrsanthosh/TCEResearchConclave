@@ -101,29 +101,95 @@ const AuthorGuidelines = () => {
           Paper Submissions
         </h1>
         <ul className="p-8 space-y-6">
-          {paperSubmissions.map((guideline, index) => (
-            <motion.li
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex items-start"
-            >
-              <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
-                <span className="text-white font-medium text-sm">
-                  {index + 1}
-                </span>
-              </span>
-              <p className="text-gray-600">{guideline}</p>
-            </motion.li>
-          ))}
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 * 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">1</span>
+            </span>
+            <p className="text-gray-600">
+              The{" "}
+              <span className="font-bold hover:cursor-pointer hover:text-blue-500">
+                {" "}
+                (https://cmt3.research.microsoft.com){" "}
+              </span>{" "}
+              Microsoft CMT service was used for managing the peer-reviewing
+              process for this conference. This service was provided for free by
+              Microsoft and they bore all expenses, including costs for Azure
+              cloud services as well as for software development and support.
+            </p>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 2 * 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">2</span>
+            </span>
+            <p className="text-gray-600">
+              Read through Author Guidelines carefully & proceed with
+              submission.
+            </p>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 3 * 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">3</span>
+            </span>
+            <p className="text-gray-600">
+              Paper should not exceed more than 6 pages.
+            </p>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 4 * 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">4</span>
+            </span>
+            <p className="text-gray-600">
+              Make sure to prepare the paper in the format prescribed.{" "}
+              <span className="font-bold hover:cursor-pointer hover:text-blue-500">
+                Click here
+              </span>{" "}
+              to download the format.
+            </p>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 5 * 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">5</span>
+            </span>
+            <p className="text-gray-600">
+              Click the below link to submit your documents.
+            </p>
+          </motion.li>
         </ul>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="flex bg-primary-accent mb-5 max-w-[300px] justify-center text-white font-semibold py-3 px-6 lg:w-[50%] mx-auto mt-5 md:mt-0 rounded-full hover:bg-opacity-90 transition duration-300"
         >
-          Download Paper Template
+          Submit Your Paper
         </motion.button>
       </section>
 
