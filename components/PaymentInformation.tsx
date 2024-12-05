@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const PaymentInformation: React.FC = () => {
+  const Router = useRouter();
+
   return (
     <div className="sm:p-6 md:p-8 rounded-lg mt-10 md:mt-0">
       <h2 className="text-3xl text-center font-bold text-gray-800 mb-6">
@@ -19,17 +22,19 @@ const PaymentInformation: React.FC = () => {
         >
           <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
           <p className="text-gray-600 w-full">
-            All payments should be made by{" "}
-            <span className="font-bold">NEFT</span>
+            All payments should be made through{" "}
+            <span
+              className="font-bold hover:underline hover:cursor-pointer hover:text-blue-500"
+              onClick={() => Router.push("https://eazypay.icicibank.com")}
+            >
+              https://eazypay.icicibank.com
+            </span>
             <br />
-            <span className="text-center w-full flex justify-center items-center">
-              Account Name : TCE Souvenir
+            <span className="text-center w-full flex justify-center items-center mt-4">
+              Account Name : T C E SOUVENIOR.CCE
               <br />
-              Account Number : 601301902011
-              <br />
-              IFSC CODE : ICIC0000563
-              <br />
-              Branch : Madurai - TCE
+              Note: Type T Space C Space E in the Institution Name for Selecting
+              the bank account for payment
             </span>
           </p>
         </motion.div>
