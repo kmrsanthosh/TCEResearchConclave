@@ -4,8 +4,16 @@ import React from "react";
 import SectionHeader from "../SectionHeader";
 import { motion } from "framer-motion";
 import { guidelines, publication } from "@/app/data";
+import { saveAs } from "file-saver";
 
 const AuthorGuidelines = () => {
+  const saveFile = () => {
+    saveAs(
+      "/TCEResearchConclave/RC 2025 template.docx",
+      "RC 2025 template.docx"
+    );
+  };
+
   return (
     <>
       <SectionHeader
@@ -163,14 +171,11 @@ const AuthorGuidelines = () => {
             </span>
             <p className="text-gray-600">
               Make sure to prepare the paper in the format prescribed.{" "}
-              <span className="font-bold hover:cursor-pointer hover:text-blue-500">
-                <a
-                  href="/TCEResearchConclave/RC 2025 template.docx"
-                  download={true}
-                  className="font-bold hover:cursor-pointer hover:text-blue-500"
-                >
-                  Click here
-                </a>
+              <span
+                className="font-bold hover:cursor-pointer hover:text-blue-500"
+                onClick={saveFile}
+              >
+                Click here
               </span>{" "}
               to download the format.
             </p>
