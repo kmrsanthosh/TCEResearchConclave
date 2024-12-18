@@ -163,14 +163,15 @@ const AuthorGuidelines = () => {
             </span>
             <p className="text-gray-600">
               Make sure to prepare the paper in the format prescribed.{" "}
-              <span className="font-bold hover:cursor-pointer hover:text-blue-500">
-                <a
-                  href="/TCEResearchConclave/RC2025template.docx"
-                  download={true}
-                  className="font-bold hover:cursor-pointer hover:text-blue-500"
-                >
-                  Click here
-                </a>
+              <span
+                className="font-bold hover:cursor-pointer hover:text-blue-500"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/uc?export=download&id=1NFg6ZUM8ZCKCk-c9EShjOGAIQZ456EtH"
+                  )
+                }
+              >
+                Click here
               </span>{" "}
               to download the format.
             </p>
