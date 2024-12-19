@@ -25,13 +25,13 @@ const OrganizingSecretary: CommitteeMember[] = [
   {
     name: "Dr. K. Hariharan",
     designation:
-      "Dean (III), Professor, Department of Electronics and Communication Engineering",
+      "Dean (Industry Institute Interaction), Professor, Department of Electronics and Communication Engineering",
     committeeDesignation: "Organizing Secretary",
   },
   {
     name: "Dr. S. Charles Raja",
     designation:
-      "Associate Dean (R&D), Associate Professor, Department of Electrical and Electronics Engineering",
+      "Associate Dean (Research and Development), Associate Professor, Department of Electrical and Electronics Engineering",
     committeeDesignation: "Organizing Secretary",
   },
 ];
