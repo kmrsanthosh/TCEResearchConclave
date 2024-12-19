@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   return (
     <footer id="contact-us" className="bg-primary-accent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* <FooterSection title="About TCE">
             <p className="text-sm text-white text-justify">
               Thiagarajar College of Engineering (TCE) is a premier institution
