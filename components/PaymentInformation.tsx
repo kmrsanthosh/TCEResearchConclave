@@ -31,7 +31,7 @@ const PaymentInformation: React.FC = () => {
             </span>
             <br />
             <span className="text-center w-full flex justify-center items-center mt-4">
-              Account Name : T C E SOUVENIOR.CCE
+              Account Name : T C E SOUVENIOR CCE
               <br />
               Note: Type T Space C Space E in the Institution Name for Selecting
               the bank account for payment
