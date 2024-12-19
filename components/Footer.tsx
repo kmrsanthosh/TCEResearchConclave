@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   return (
     <footer id="contact-us" className="bg-primary-accent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* <FooterSection title="About TCE">
             <p className="text-sm text-white text-justify">
               Thiagarajar College of Engineering (TCE) is a premier institution
@@ -100,11 +100,35 @@ export const Footer: React.FC = () => {
             </address>
           </FooterSection>
 
-          {/* <FooterSection title="Connect With Us">
+          <FooterSection title="Connect With Us">
             <div className="flex space-x-4">
+              <Link
+                href="https://tce.edu/"
+                className="text-gray-300 hover:text-white"
+                target="_blank"
+              >
+                <span className="sr-only">TCE Website</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="lucide lucide-globe"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  <path d="M2 12h20" />
+                </svg>
+              </Link>
               <Link
                 href="https://www.facebook.com/TheOfficialTCEPage"
                 className="text-gray-300 hover:text-white"
+                target="_blank"
               >
                 <span className="sr-only">Facebook</span>
                 <svg
@@ -123,6 +147,7 @@ export const Footer: React.FC = () => {
               <Link
                 href="https://twitter.com/tceofficialpage"
                 className="text-gray-300 hover:text-white"
+                target="_blank"
               >
                 <span className="sr-only">Twitter</span>
                 <svg
@@ -137,6 +162,7 @@ export const Footer: React.FC = () => {
               <Link
                 href="https://www.linkedin.com/in/tcemadurai"
                 className="text-gray-300 hover:text-white"
+                target="_blank"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg
@@ -155,6 +181,7 @@ export const Footer: React.FC = () => {
               <Link
                 href="https://www.instagram.com/tce_madurai/"
                 className="text-gray-300 hover:text-white"
+                target="_blank"
               >
                 <span className="sr-only">Instagram</span>
                 <svg
@@ -171,7 +198,7 @@ export const Footer: React.FC = () => {
                 </svg>
               </Link>
             </div>
-          </FooterSection> */}
+          </FooterSection>
         </div>
 
         <div className="mt-8 pt-8 border-t border-white-700 text-center text-sm text-white/80">
