@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 interface FeeEntry {
   category: string;
-  fee: string;
+  fee?: string;
 }
 
 const feeData: FeeEntry[] = [
@@ -12,6 +12,7 @@ const feeData: FeeEntry[] = [
   { category: "Research Scholar", fee: "Rs. 1000 /-" },
   { category: "Faculty Members", fee: "Rs. 1500 /-" },
   { category: "Industry Delegates", fee: "Rs. 2000 /-" },
+  { category: "No registration fee for Phd Scholars from TCE, Madurai" },
 ];
 
 const RegistrationFeesTable: React.FC = () => {
@@ -48,7 +49,9 @@ const RegistrationFeesTable: React.FC = () => {
                 </span>
                 <span className="font-medium">{entry.category}</span>
               </div>
-              <span className="text-lg font-bold">{entry.fee}</span>
+              {entry.fee ?? (
+                <span className="text-lg font-bold">{entry.fee}</span>
+              )}
             </motion.div>
           ))}
         </motion.div>
