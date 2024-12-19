@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 interface FeeEntry {
   category: string;
-  fee?: string;
+  fee: string;
 }
 
 const feeData: FeeEntry[] = [
@@ -12,7 +12,6 @@ const feeData: FeeEntry[] = [
   { category: "Research Scholar", fee: "Rs. 1000 /-" },
   { category: "Faculty Members", fee: "Rs. 1500 /-" },
   { category: "Industry Delegates", fee: "Rs. 2000 /-" },
-  { category: "No registration fee for Phd Scholars from TCE, Madurai" },
 ];
 
 const RegistrationFeesTable: React.FC = () => {
@@ -49,14 +48,24 @@ const RegistrationFeesTable: React.FC = () => {
                 </span>
                 <span className="font-medium">{entry.category}</span>
               </div>
-              {entry.fee ?? (
-                <span className="text-lg font-bold">{entry.fee}</span>
-              )}
+
+              <span className="text-lg font-bold">{entry.fee}</span>
             </motion.div>
           ))}
         </motion.div>
       </div>
       <div className="mt-8 space-y-4 text-justify">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex items-start bg-white p-4 rounded-lg shadow"
+        >
+          <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+          <p className="text-gray-600">
+            No registration fee for Phd Scholars from TCE, Madurai
+          </p>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
