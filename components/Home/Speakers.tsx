@@ -59,7 +59,7 @@ const speakersData: Speaker[] = [
     imagePlaceholder: "https://i.ibb.co/5cBD5zz/unnamed.png",
   },
   {
-    name: "Dr. M. Manivel Raja",
+    name: "Dr. Manivel Raja",
     title: "",
     organization: "DRDO, Ministry of Defence, Hyderabad",
     credentials: [
