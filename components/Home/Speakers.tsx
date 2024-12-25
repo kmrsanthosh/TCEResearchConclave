@@ -112,7 +112,7 @@ const speakersData: Speaker[] = [
       "https://i.ibb.co/HY8pBWj/Whats-App-Image-2024-12-05-at-18-44-37-7a1e3676.jpg",
   },
   {
-    name: "Mr. P. Bagavathy",
+    name: "Mr. P. Bhagavathy",
     title: "",
     organization: "Bosch Global Software Technologies, Coimbatore",
     credentials: [
@@ -120,7 +120,7 @@ const speakersData: Speaker[] = [
       "MS in Computing Science from Coventry University, UK",
     ],
     imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "https://i.ibb.co/Sy2vLR2/Whats-App-Image-2024-12-25-at-10-55-18-3e4be9d0.jpg",
   },
   {
     name: "Dr. M.S. Sabitha",
