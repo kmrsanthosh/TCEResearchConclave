@@ -67,7 +67,7 @@ const speakersData: Speaker[] = [
       "MS in Computing Science from Coventry University, UK",
     ],
     imagePlaceholder:
-      "https://ibb.co/tXyQMS2",
+      "https://i.ibb.co/4dBKZcS/Whats-App-Image-2024-12-26-at-18-07-23.jpg",
   },
   {
     name: "Dr. N. Anandavalli",
