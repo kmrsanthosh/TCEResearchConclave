@@ -25,7 +25,7 @@ const speakersData: Speaker[] = [
       "MS in Computing Science from Coventry University, UK",
     ],
     imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "https://i.ibb.co/Gp2LJWJ/Whats-App-Image-2024-12-27-at-16-37-17-a44c7b7a.jpg",
   },
   {
     name: "Mr. Suresh Rajappa",
