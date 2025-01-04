@@ -78,7 +78,7 @@ const speakersData: Speaker[] = [
       "MS in Computing Science from Coventry University, UK",
     ],
     imagePlaceholder:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "https://i.ibb.co/5vYg4v0/Whats-App-Image-2025-01-04-at-15-03-43-d510cc3e.jpg",
   },
   {
     name: "Dr. B. Somasundaram",
