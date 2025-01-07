@@ -57,7 +57,7 @@ export const Hero = () => {
       className="relative md:h-[calc(100vh-0px)] h-[calc(100vh-80px)] overflow-hidden"
     >
       <Image
-        src="/TCEResearchConclave/assets/images/TCE-Main-Building.webp"
+        src="/assets/images/TCE-Main-Building.webp"
         alt="TCE Main Building Image"
         layout="fill"
         objectFit="cover"
