@@ -24,8 +24,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/Gp2LJWJ/Whats-App-Image-2024-12-27-at-16-37-17-a44c7b7a.jpg",
+    imagePlaceholder: "/assets/speakers/k-sridhar.jpg",
   },
   {
     name: "Mr. Suresh Rajappa",
@@ -35,7 +34,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder: "https://i.ibb.co/ctCG8v9/unnamed.png",
+    imagePlaceholder: "/assets/speakers/suresh-rajappa.png",
   },
   {
     name: "Ms. Harshitha Phaniraj",
@@ -45,8 +44,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://cdn.theorg.com/ff1c2141-93ff-481a-b28b-2e0eb1396d1e_thumb.jpg",
+    imagePlaceholder: "/assets/speakers/harshitha-phaniraj.jpg",
   },
   {
     name: "Mr. N. G. Karthikeyan",
