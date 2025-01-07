@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-shrink-0 flex-row space-x-3 md:space-x-10">
             <div className="relative w-[180px] h-[40px] md:w-[310px] md:h-[70px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/TCE-Logo.svg"
+                src="/assets/logos/TCE-Logo.svg"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="relative w-[95px] h-[40px] md:h-[70px] md:w-[170px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/iiclogo.webp"
+                src="/assets/logos/iiclogo.webp"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden sm:block sm:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/NAAC_LOGO.png"
+                src="/assets/logos/NAAC_LOGO.png"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden sm:block sm:relative w-[40px] h-[40px] md:h-[70px] md:w-[70px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/5S.jpg"
+                src="/assets/logos/5S.jpg"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden lg:block lg:relative w-[40px] h-[40px] md:h-[70px] md:w-[110px]">
               <Image
-                src="/TCEResearchConclave/assets/logos/NIRF.png"
+                src="/assets/logos/NIRF.png"
                 alt="TCE Logo"
                 layout="fill"
                 objectFit="cover"
