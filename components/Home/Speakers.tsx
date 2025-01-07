@@ -134,7 +134,7 @@ const speakersData: Speaker[] = [
     title: "Chief Technology Officer (CTO)",
     organization: "Aravind Eye Care System, Madurai",
     imagePlaceholder:
-      "https://media.licdn.com/dms/image/v2/D5603AQEXE8uM762rrA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725727903855?e=1735776000&v=beta&t=3srFCg7BynsYx5lQ86dOWJyG1vBoBf6_nVft3ChLTNE",
+      "/TCEResearchConclave/assets/speakers/srinivasulu-thayam.jpeg",
   },
 ];
 
