@@ -55,9 +55,23 @@ export const paperSubmissions = [
   // "Please click the link below (https://forms.gle/kwc4LLmbtjZZnxVV7), complete the registration by entering the correct details, and upload the appropriate payment receipt.",
 ];
 
-export const publication = [
+export const publication: (string | string[])[] = [
   "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology*",
-  "Best Paper Award for every session",
+  "Best Paper Awards for each technical session with a total prize pool of Rs. 50,000/-",
+  "Selected papers have the opportunity for publication in UGC-CARE (Group-1) listed ICTACT Journals:",
+  [
+    "• ICTACT Journal on Communication Technology",
+    "• ICTACT Journal on Image and Video Processing",
+    "• ICTACT Journal on Soft Computing",
+    "• ICTACT Journal on Microelectronics",
+  ],
+];
+
+export const publicationUGC = [
+  "• ICTACT Journal on Communication Technology",
+  "• ICTACT Journal on Image and Video Processing",
+  "• ICTACT Journal on Soft Computing",
+  "• ICTACT Journal on Microelectronics",
 ];
 
 export const guidelines = [

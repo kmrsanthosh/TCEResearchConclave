@@ -24,8 +24,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/Gp2LJWJ/Whats-App-Image-2024-12-27-at-16-37-17-a44c7b7a.jpg",
+    imagePlaceholder: "/assets/speakers/k-sridhar.jpg",
   },
   {
     name: "Mr. Suresh Rajappa",
@@ -35,7 +34,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder: "https://i.ibb.co/ctCG8v9/unnamed.png",
+    imagePlaceholder: "/assets/speakers/suresh-rajappa.png",
   },
   {
     name: "Ms. Harshitha Phaniraj",
@@ -45,8 +44,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://cdn.theorg.com/ff1c2141-93ff-481a-b28b-2e0eb1396d1e_thumb.jpg",
+    imagePlaceholder: "/assets/speakers/harshitha-phaniraj.jpg",
   },
   {
     name: "Mr. N. G. Karthikeyan",
@@ -56,7 +54,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder: "https://i.ibb.co/5cBD5zz/unnamed.png",
+    imagePlaceholder: "/assets/speakers/karthikeyan.png",
   },
   {
     name: "Dr. Manivel Raja",
@@ -66,8 +64,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/4dBKZcS/Whats-App-Image-2024-12-26-at-18-07-23.jpg",
+    imagePlaceholder: "/assets/speakers/manivel-raja.jpg",
   },
   {
     name: "Dr. N. Anandavalli",
@@ -77,8 +74,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/5vYg4v0/Whats-App-Image-2025-01-04-at-15-03-43-d510cc3e.jpg",
+    imagePlaceholder: "/assets/speakers/anandavalli.jpg",
   },
   {
     name: "Dr. B. Somasundaram",
@@ -88,17 +84,17 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder: "https://i.ibb.co/YR2p7K0/unnamed.png",
+    imagePlaceholder: "/assets/speakers/b-somasundaram.png",
   },
   {
-    name: "Dr.M.Rajesh Pandian",
+    name: "Dr.M. Rajesh Pandian",
     title: "",
     organization: "Qualcomm, Chennai",
     credentials: [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder: "https://i.ibb.co/rMc4B9w/unnamed.png",
+    imagePlaceholder: "/assets/speakers/rajesh-pandian.png",
   },
   {
     name: "Dr. Y. Uma Maheswari",
@@ -108,8 +104,7 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/HY8pBWj/Whats-App-Image-2024-12-05-at-18-44-37-7a1e3676.jpg",
+    imagePlaceholder: "/assets/speakers/uma-maheswari.jpg",
   },
   {
     name: "Mr. P. Bhagavathy",
@@ -119,22 +114,20 @@ const speakersData: Speaker[] = [
       "Digital transformation and AI for Business Leaders from IIM-Lucknow",
       "MS in Computing Science from Coventry University, UK",
     ],
-    imagePlaceholder:
-      "https://i.ibb.co/Sy2vLR2/Whats-App-Image-2024-12-25-at-10-55-18-3e4be9d0.jpg",
+    imagePlaceholder: "/assets/speakers/p-bhagavathy.jpg",
   },
   {
     name: "Dr. M.S. Sabitha",
     title: "Head, Information systems",
     organization: "TVS Sensing Solutions, Madurai",
     // address: "Madurai-Melur Road, Vellaripatti, Madurai – 625122",
-    imagePlaceholder: "https://i.ibb.co/6DQbYbG/unnamed.png",
+    imagePlaceholder: "/assets/speakers/m-s-sabitha.png",
   },
   {
     name: "Mr. Srinivasulu Thayam",
     title: "Chief Technology Officer (CTO)",
     organization: "Aravind Eye Care System, Madurai",
-    imagePlaceholder:
-      "/TCEResearchConclave/assets/speakers/srinivasulu-thayam.jpeg",
+    imagePlaceholder: "/assets/speakers/srinivasulu-thayam.jpeg",
   },
 ];
 

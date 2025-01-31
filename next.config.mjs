@@ -5,7 +5,7 @@ const nextConfig = {
   },
   output: "export", // <=== enables static exports
   reactStrictMode: true,
-  basePath: "/TCEResearchConclave",
+  // basePath: "/TCEResearchConclave",
 };
 
 export default nextConfig;
