@@ -4,7 +4,6 @@ import React from "react";
 import SectionHeader from "../SectionHeader";
 import { motion } from "framer-motion";
 import { guidelines, publication, publicationUGC } from "@/app/data";
-import { saveAs } from "file-saver";
 
 const AuthorGuidelines = () => {
   return (
