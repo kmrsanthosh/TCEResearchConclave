@@ -3,17 +3,10 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
 import { motion } from "framer-motion";
-import { guidelines, publication } from "@/app/data";
+import { guidelines, publication, publicationUGC } from "@/app/data";
 import { saveAs } from "file-saver";
 
 const AuthorGuidelines = () => {
-  const saveFile = () => {
-    saveAs(
-      "/TCEResearchConclave/RC 2025 template.docx",
-      "RC 2025 template.docx"
-    );
-  };
-
   return (
     <>
       <SectionHeader
@@ -30,7 +23,7 @@ const AuthorGuidelines = () => {
 
       {/* <section className="mt-8 space-y-6 px-2 md:px-14 text-justify">
         <h2 className="text-3xl font-bold text-primary-accent sm:text-4xl">
-          Guidelines
+            Guidelines
         </h2>
         <ul className="space-y-4 px-5">
           {guidelines.map((guideline, index) => (
@@ -44,7 +37,7 @@ const AuthorGuidelines = () => {
               <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent text-justify flex items-center justify-center">
                 <span className="text-white font-medium text-sm">
                   {index + 1}
-                </span>
+          </span>
               </span>
               <p className="ml-3 text-base text-gray-700">{guideline}</p>
             </motion.li>
@@ -171,12 +164,13 @@ const AuthorGuidelines = () => {
             </span>
             <p className="text-gray-600">
               Make sure to prepare the paper in the format prescribed.{" "}
-              <span
+              <a
+                href="/RC2025template.pdf"
+                download
                 className="font-bold hover:cursor-pointer hover:text-blue-500"
-                onClick={saveFile}
               >
                 Click here
-              </span>{" "}
+              </a>{" "}
               to download the format.
             </p>
           </motion.li>
@@ -213,28 +207,70 @@ const AuthorGuidelines = () => {
         <h1 className="font-bold text-center text-primary-accent text-5xl mb-2">
           Publication
         </h1>
-        <ul className="p-8 space-y-6">
-          {publication.map((guideline, index) => (
-            <motion.li
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex items-start"
-            >
-              <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
-                <span className="text-white font-medium text-sm">
-                  {index + 1}
-                </span>
-              </span>
-              <p className="text-gray-600">{guideline}</p>
-            </motion.li>
-          ))}
+        <div className="p-8 space-y-6">
+          {/* Springer Publication */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">1</span>
+            </span>
+            <p className="text-gray-600">{publication[0]}</p>
+          </motion.div>
 
-          <p className="text-gray-600 ml-10">
+          {/* Best Paper Award */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">2</span>
+            </span>
+            <p className="text-gray-800 font-medium">{publication[1]}</p>
+          </motion.div>
+
+          {/* ICTACT Journals Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex items-start"
+          >
+            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-primary-accent flex items-center justify-center mr-3">
+              <span className="text-white font-medium text-sm">3</span>
+            </span>
+            <div className="space-y-4">
+              <p className="text-gray-600">{publication[2]}</p>
+              <ul className="ml-8 space-y-2">
+                {publicationUGC.map((journal: string, idx: number) => (
+                  <motion.li
+                    key={idx}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.4 + idx * 0.1 }}
+                    className="text-gray-600"
+                  >
+                    {journal}
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-gray-600 ml-10 text-sm italic"
+          >
             *Additional fee applicable for paper publications
-          </p>
-        </ul>
+          </motion.p>
+        </div>
       </section>
     </>
   );
