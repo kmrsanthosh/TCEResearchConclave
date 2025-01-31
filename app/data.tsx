@@ -57,14 +57,8 @@ export const paperSubmissions = [
 
 export const publication: (string | string[])[] = [
   "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology*",
-  "Best Paper Awards for each technical session with a total prize pool of Rs. 50,000/-",
+  "Best Paper Awards for each technical session with a total prize sum of Rs. 50,000/-",
   "Selected papers have the opportunity for publication in UGC-CARE (Group-1) listed ICTACT Journals:",
-  [
-    "• ICTACT Journal on Communication Technology",
-    "• ICTACT Journal on Image and Video Processing",
-    "• ICTACT Journal on Soft Computing",
-    "• ICTACT Journal on Microelectronics",
-  ],
 ];
 
 export const publicationUGC = [
