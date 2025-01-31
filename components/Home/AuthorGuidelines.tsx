@@ -245,7 +245,7 @@ const AuthorGuidelines = () => {
             </span>
             <div className="space-y-4">
               <p className="text-gray-600">{publication[2]}</p>
-              <ul className="ml-8 space-y-2">
+              <ul className="space-y-2">
                 {publicationUGC.map((journal: string, idx: number) => (
                   <motion.li
                     key={idx}
