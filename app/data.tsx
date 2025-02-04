@@ -56,7 +56,7 @@ export const paperSubmissions = [
 ];
 
 export const publication: (string | string[])[] = [
-  "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology*",
+  "Selected papers will be published in Springer book series - SEE - Sustainable Economy and Ecotechnology (Publication charges: Rs 3000 + 18% GST)*",
   "Best Paper Awards for each technical session with a total prize sum of Rs. 50,000/-",
   "Selected papers have the opportunity for publication in UGC-CARE (Group-1) listed ICTACT Journals:",
 ];
@@ -224,7 +224,7 @@ export const registrationSteps: RegistrationStep[] = [
       "After acceptance of your final paper proceed with registration.",
       "At least one author of each accepted paper must register for the conference.",
       "Pay the registration fee through the provided portal: eazypay.icicibank.com",
-      "Click the link below to complete the registration process.",
+      "Click the link below to complete the registration process.",
     ],
   },
 ];
