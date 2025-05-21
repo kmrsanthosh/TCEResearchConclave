@@ -7,6 +7,7 @@ import { Hero } from "@/components/Home/Hero";
 import ImportantDates from "@/components/Home/ImportantDates";
 import Registration from "@/components/Home/Registration";
 import Speakers from "@/components/Home/Speakers";
+import Gallery from "@/components/Home/Gallery";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ImportantDates />
       <AuthorGuidelines />
       <Registration />
+      <Gallery />
     </div>
   );
 }
